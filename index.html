@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=0, initial-scale=1.0">
+    <title>Booklooker</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='http://masonry.desandro.com/masonry.pkgd.js'></script>
+    <script src="blur.min.js"></script>
+    <script src="js/scroll.js"></script>
+  </head>
+
+  <body>
+    <div class="topbar">
+      <div class="pageNav">
+        <h1 class="pageTitle">booklooker</h1>
+        <div class="topbarIconSpace">
+          <div class="topbarIcon" id="search"></div>
+          <div class="topbarIcon" id="sell"></div>
+          <div class="topbarIcon" id="user"></div>
+        </div>
+      </div>
+      <div class="subNav">
+        <span class="navBullet">Bestseller</span>
+        <span class="navBullet">Categories</span>
+        <span class="navBullet">Recommendations</span>
+      </div>
+    </div>
+
+
+    <div class="content">
+      <div class="grid">
+          <div class="grid-item" id="book1">
+            <div class="book" id="bookAndo"></div>
+            <span id="bookTitle">Ando</span>
+            <span id="bookSubtitle">Tadao Ando</span>
+          </div>
+          <div class="grid-item" id="book2">
+            <div class="book" id="bookMonet"></div>
+            <span id="bookTitle">Monet</span>
+            <span id="bookSubtitle">Claude Monet</span>
+          </div>
+          <div class="grid-item grid-item--height3"></div>
+          <div class="grid-item grid-item--height2"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item grid-item--height2"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item grid-item--height3"></div>
+          <div class="grid-item grid-item--height2"></div>
+          <div class="grid-item grid-item--height4"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item grid-item--height2"></div>
+          <div class="grid-item grid-item--height4"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item grid-item--height2"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item grid-item--height2"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item grid-item--height2"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item grid-item--height3"></div>
+      </div>
+
+      <!-- Genre -->
+      <div class="grid">
+        <div class="grid-item grid-item--genre">
+          <div class="genre">
+            <div class="genreIcon"></div>
+            <div class="genreText">Science</div>
+          </div>
+        </div>
+        <div class="grid-item grid-item--genre">
+          <div class="genre">
+            <div class="genreIcon"></div>
+            <div class="genreText">Law</div>
+          </div>
+        </div>
+        <div class="grid-item grid-item--genre">
+          <div class="genre">
+            <div class="genreIcon"></div>
+            <div class="genreText">Economics</div>
+          </div>
+        </div>
+        <div class="grid-item grid-item--genre">
+          <div class="genre">
+            <div class="genreIcon"></div>
+            <div class="genreText">Humanities</div>
+          </div>
+        </div>
+        <div class="grid-item grid-item--genre">
+          <div class="genre">
+            <div class="genreIcon"></div>
+            <div class="genreText">Art & Design</div>
+          </div>
+        </div>
+        <div class="grid-item grid-item--genre">
+          <div class="genre">
+            <div class="genreIcon"></div>
+            <div class="genreText">Music</div>
+          </div>
+        </div>
+        <div class="grid-item grid-item--genre">
+          <div class="genre">
+            <div class="genreIcon"></div>
+            <div class="genreText">Hobby</div>
+          </div>
+        </div>
+        <div class="grid-item grid-item--genre">
+          <div class="genre">
+            <div class="genreIcon"></div>
+            <div class="genreText">Sports</div>
+          </div>
+        </div>
+        <div class="grid-item grid-item--genre">
+          <div class="genre">
+            <div class="genreIcon"></div>
+            <div class="genreText">Cooking</div>
+          </div>
+        </div>
+        <div class="grid-item grid-item--genre">
+          <div class="genre">
+            <div class="genreIcon"></div>
+            <div class="genreText">Politics</div>
+          </div>
+        </div>
+        <div class="grid-item grid-item--genre">
+          <div class="genre">
+            <div class="genreIcon"></div>
+            <div class="genreText">Technology</div>
+          </div>
+        </div>
+        <div class="grid-item grid-item--genre">
+          <div class="genre">
+            <div class="genreIcon"></div>
+            <div class="genreText">Languages</div>
+          </div>
+        </div>
+        <div class="grid-item grid-item--genre">
+          <div class="genre">
+            <div class="genreIcon"></div>
+            <div class="genreText">Novels</div>
+          </div>
+        </div>
+        <div class="grid-item grid-item--genre">
+          <div class="genre">
+            <div class="genreIcon"></div>
+            <div class="genreText">Drama</div>
+          </div>
+        </div>
+        <div class="grid-item grid-item--genre">
+          <div class="genre">
+            <div class="genreIcon"></div>
+            <div class="genreText">Thrillers</div>
+          </div>
+        </div>
+        <div class="grid-item grid-item--genre">
+          <div class="genre">
+            <div class="genreIcon"></div>
+            <div class="genreText">Crime</div>
+          </div>
+        </div>
+        <div class="grid-item grid-item--genre">
+          <div class="genre">
+            <div class="genreIcon"></div>
+            <div class="genreText">History</div>
+          </div>
+        </div>
+        <div class="grid-item grid-item--genre">
+          <div class="genre">
+            <div class="genreIcon"></div>
+            <div class="genreText">Humor</div>
+          </div>
+        </div>
+        <div class="grid-item grid-item--genre">
+          <div class="genre">
+            <div class="genreIcon"></div>
+            <div class="genreText">Romance</div>
+          </div>
+        </div>
+        <div class="grid-item grid-item--genre">
+          <div class="genre">
+            <div class="genreIcon"></div>
+            <div class="genreText">Others</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--
+    <script>
+      $( window ).load(function() {
+        var topbarWidth = $(".grid").css( "width" );
+        $(".topbar").css("width", topbarWidth);
+      });
+      $( window ).resize(function() {
+        var topbarWidth = $(".grid").css( "width" );
+        $(".topbar").css("width", topbarWidth);
+      });
+    </script>
+-->
+
+    <!--<script>$(window).scroll(function() {
+      /* Act on the event */
+      /*var p = $( "html" );*/
+      currentScroll = $("body").scrollTop();
+      if (currentScroll > lastScroll) {
+        console.log("down")
+      };
+      if (currentScroll < lastScroll) {
+        console.log("up")
+      };
+      lastScroll = $("body").scrollTop();
+      console.log($("body").scrollTop());
+    });
+    </script>-->
+    <script src="js/index.js"></script>
+  </body>
+</html>

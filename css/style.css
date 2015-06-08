@@ -1,0 +1,227 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body { 
+  font-family: Mark Pro, Helvetica, sans-serif;
+  margin: 0 0 0 0;
+}
+
+
+
+/* ---- topbar ---- */
+
+.topbar {
+  width: 1156px;
+  height: 180px;
+  margin: 0 auto 0 auto;
+  background-color: red;
+  position: relative;
+  z-index: 999;
+  left: 0px;
+  top: 0px;
+  -webkit-transition: 0.5s;
+}
+
+/* ---- main Navigation ---- */
+
+.pageNav {
+  width: 100%;
+  height: 120px;
+  background-color: #fff;
+}
+
+.pageTitle {
+  margin: 0 auto 0 20px;
+  text-align: left;
+  position: absolute;
+  top: 44px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #474747;
+}
+
+.topbarIconSpace {
+  float: right;
+  width: 158px;
+  height: 46px;
+  margin: 36px 0 38px 0;
+}
+
+.topbarIcon {
+  width: 46px;
+  height: 46px;
+  float: left;
+  opacity: 0.5;
+  -webkit-transition: 0.3s;
+}
+
+.topbarIcon:hover {opacity: 1.0;}
+
+#search {background-image: url(../images/icons/topbarSearch.svg);}
+#sell {
+  margin: 0 10px 0 10px;
+  background-image: url(../images/icons/topbarSell.svg);
+}
+#user {background-image: url(../images/icons/topbarUser.svg);}
+
+/* ---- sub Navigation ---- */
+
+.subNav {
+  width: 100%;
+  height: 60px;
+  position: relative;
+  background-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f0f1ea;
+}
+
+.navBullet {
+  top: 18px;
+  margin-left: 20px;
+  position: relative;
+  text-decoration: none;
+}
+
+.navBullet:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -4px;
+  left: 0;
+  background-color: #c89969;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+}
+
+.navBullet:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+}
+
+/* ---- make topbar responsive ---- */
+@media (min-width: 372px) {.topbar { width: 372px;}}
+@media (min-width: 568px) {.topbar { width: 568px;}}
+@media (min-width: 764px) {.topbar { width: 764px;}}
+@media (min-width: 960px) {.topbar { width: 960px;}}
+@media (min-width: 1157px) {.topbar { width: 1156px;}}
+
+.content {
+  width: auto;
+  max-width: 1156px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.title {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+/* ---- grid ---- */
+
+.grid {
+  position: relative;
+  margin: 50px auto 0 auto;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-item {
+  width: 176px;
+  height: 220px;
+  float: left;
+  background: #666;
+  /*border: 2px solid #333;*/
+  border-color: rgb(50, 50, 50);
+  margin-bottom: 21px;
+  -webkit-transition: 0.2s;
+}
+
+.grid-item:hover { background-color: #999}
+
+.grid-item--genre { height: 176px;}
+
+.grid-item--height2 { height: 200px; }
+.grid-item--height3 { height: 260px; }
+.grid-item--height4 { height: 320px; }
+
+.grid-item--width2 { width: 372px;}
+
+.genre {
+  margin: 10px 10px 16px 10px;
+  width: 156px;
+  height: 150px;
+  text-align: center;
+}
+
+.genreIcon {
+  width: 110px;
+  height: 110px;
+  float: left;
+  margin: 15px 23px 0px 23px;
+  background-color: #000;
+}
+
+.genreText {
+  display: inline-block;
+  margin-top: 9px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.book {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-transition: 0.2s; 
+}
+
+#book1 {height: 222px;}
+#book1:hover > #bookAndo {-webkit-filter: blur(5px);}
+#book1:hover > #bookTitle {opacity: 1;}
+#book1:hover > #bookSubtitle {opacity: 1;}
+#bookAndo {background-image: url(../images/bookCovers/bookCover1.jpg);}
+
+#book2 {height: 247px;}
+#book2:hover > #bookMonet {-webkit-filter: blur(5px);}
+#book2:hover > #bookTitle {opacity: 1;}
+#book2:hover > #bookSubtitle {opacity: 1;}
+#bookMonet {background-image: url(../images/bookCovers/bookCover2.jpg);}
+
+#bookTitle {
+  position: absolute;
+  top: 32px;
+  left: 10px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  -webkit-transition: 0.2s;
+  text-shadow: 0px 2px 2px rgba(0,0,0,0.25);
+  opacity: 0;
+}
+
+#bookSubtitle {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 200;
+  color: #fff;
+  -webkit-transition: 0.2s;
+  text-shadow: 0px 2px 2px rgba(0,0,0,0.25);
+  opacity: 0;
+}
