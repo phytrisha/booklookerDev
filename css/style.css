@@ -32,6 +32,12 @@ body {
   background-color: #fff;
 }
 
+.pageNav.scrolled-down {
+  height: 0px;
+}
+
+
+
 .pageTitle {
   margin: 0 auto 0 20px;
   text-align: left;
@@ -41,6 +47,8 @@ body {
   font-weight: 600;
   color: #474747;
 }
+
+.pageTitle.scrolled-down {display: none;}
 
 .topbarIconSpace {
   float: right;
@@ -56,6 +64,8 @@ body {
   opacity: 0.5;
   -webkit-transition: 0.3s;
 }
+
+.topbarIcon.scrolled-down { display: none;}
 
 .topbarIcon:hover {opacity: 1.0;}
 

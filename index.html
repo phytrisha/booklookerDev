@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/style.css">
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='http://masonry.desandro.com/masonry.pkgd.js'></script>
-    <script src="blur.min.js"></script>
     <script src="js/scroll.js"></script>
   </head>
 
@@ -187,33 +186,17 @@
         </div>
       </div>
     </div>
-    <!--
-    <script>
-      $( window ).load(function() {
-        var topbarWidth = $(".grid").css( "width" );
-        $(".topbar").css("width", topbarWidth);
-      });
-      $( window ).resize(function() {
-        var topbarWidth = $(".grid").css( "width" );
-        $(".topbar").css("width", topbarWidth);
+
+    <script type="text/javascript">
+      $(window).bind('mousewheel', function(event) {
+        if (event.originalEvent.wheelDelta >= 0) {
+            console.log('Scroll up');
+        }
+        else {
+            console.log('Scroll down');
+        }
       });
     </script>
--->
-
-    <!--<script>$(window).scroll(function() {
-      /* Act on the event */
-      /*var p = $( "html" );*/
-      currentScroll = $("body").scrollTop();
-      if (currentScroll > lastScroll) {
-        console.log("down")
-      };
-      if (currentScroll < lastScroll) {
-        console.log("up")
-      };
-      lastScroll = $("body").scrollTop();
-      console.log($("body").scrollTop());
-    });
-    </script>-->
     <script src="js/index.js"></script>
   </body>
 </html>
