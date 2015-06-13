@@ -11,23 +11,26 @@
   </head>
 
   <body>
-    <div class="topbar">
-      <div class="pageNav">
-        <h1 class="pageTitle">booklooker</h1>
-        <div class="topbarIconSpace">
-          <div class="topbarIcon" id="search"></div>
-          <div class="topbarIcon" id="sell"></div>
-          <div class="topbarIcon" id="user"></div>
-        </div>
-      </div>
-      <div class="subNav">
-        <span class="navBullet">Bestseller</span>
-        <span class="navBullet">Categories</span>
-        <span class="navBullet">Recommendations</span>
-      </div>
-    </div>
+
 
     <div class="content">
+
+      <div class="topbar">
+        <div class="pageNav">
+          <h1 class="pageTitle">booklooker</h1>
+          <div class="topbarIconSpace">
+            <div class="topbarIcon" id="search"></div>
+            <div class="topbarIcon" id="sell"></div>
+            <div class="topbarIcon" id="user"></div>
+          </div>
+        </div>
+        <div class="subNav">
+          <span class="navBullet">Bestseller</span>
+          <span class="navBullet">Categories</span>
+          <span class="navBullet">Recommendations</span>
+        </div>
+      </div>
+
       <div class="grid">
           <div class="grid-item" id="book1">
             <div class="book" id="bookAndo"></div>
@@ -190,10 +193,14 @@
     <script type="text/javascript">
       $(window).bind('mousewheel', function(event) {
         if (event.originalEvent.wheelDelta >= 0) {
-            console.log('Scroll up');
+            $('.pageNav').removeClass('pageNavScrolledDown');
+            $('.topbar').removeClass('topbarScrolledDown');
+            $('.grid').removeClass('gridScrolledDown');
         }
         else {
-            console.log('Scroll down');
+            $('.pageNav').addClass('pageNavScrolledDown');
+            $('.topbar').addClass('topbarScrolledDown');
+            $('.grid').addClass('gridScrolledDown');
         }
       });
     </script>

@@ -16,12 +16,14 @@ body {
   width: 1156px;
   height: 180px;
   margin: 0 auto 0 auto;
-  background-color: red;
-  position: relative;
+  background-color: #fff;
+  position: fixed;
   z-index: 999;
-  left: 0px;
-  top: 0px;
   -webkit-transition: 0.5s;
+}
+
+.topbarScrolledDown {
+  height: 60px;
 }
 
 /* ---- main Navigation ---- */
@@ -30,10 +32,14 @@ body {
   width: 100%;
   height: 120px;
   background-color: #fff;
+  -webkit-transition: 0.5s;
+  opacity: 1;
 }
 
-.pageNav.scrolled-down {
+.pageNavScrolledDown {
   height: 0px;
+  opacity: 0;
+  /*display: none;*/
 }
 
 
@@ -48,7 +54,6 @@ body {
   color: #474747;
 }
 
-.pageTitle.scrolled-down {display: none;}
 
 .topbarIconSpace {
   float: right;
@@ -136,7 +141,13 @@ body {
 
 .grid {
   position: relative;
-  margin: 50px auto 0 auto;
+  margin: 0 auto 0 auto;
+  top: 220px;
+  -webkit-transition: 0.5s;
+}
+
+.gridScrolledDown {
+  top: 100px;
 }
 
 /* clearfix */
