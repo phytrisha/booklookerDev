@@ -11,10 +11,7 @@
   </head>
 
   <body>
-
-
     <div class="content">
-
       <div class="topbar">
         <div class="pageNav">
           <h1 class="pageTitle">booklooker</h1>
@@ -25,13 +22,13 @@
           </div>
         </div>
         <div class="subNav">
-          <span class="navBullet">Bestseller</span>
-          <span class="navBullet">Categories</span>
-          <span class="navBullet">Recommendations</span>
+          <span class="navBullet" id="bestsellerButton">Bestseller</span>
+          <span class="navBullet" id="recommendButton">Recommendations</span>
+          <span class="navBullet" id="categoriesButton">Categories</span>
         </div>
       </div>
 
-      <div class="grid">
+      <div class="grid" id="bestsellerGrid">
           <div class="grid-item" id="book1">
             <div class="book" id="bookAndo"></div>
             <span id="bookTitle">Ando</span>
@@ -66,7 +63,7 @@
       </div>
 
       <!-- Genre -->
-      <div class="grid">
+      <div class="grid" id="categoriesGrid">
         <div class="grid-item grid-item--genre">
           <div class="genre">
             <div class="genreIcon"></div>
@@ -202,6 +199,23 @@
             $('.topbar').addClass('topbarScrolledDown');
             $('.grid').addClass('gridScrolledDown');
         }
+      });
+
+      //general scrolling handler
+      $.fn.scrollView = function () {
+        return this.each(function () {
+          $('html, body').animate({
+            scrollTop: $(this).offset().top
+          }, 1000);
+        });
+      }
+
+      //subnav scrolling action
+      $('#categoriesButton').click(function(event) {
+        $('#categoriesGrid').scrollView();
+      });
+      $('#bestsellerButton').click(function(event) {
+        $('#bestsellerGrid').scrollView();
       });
     </script>
     <script src="js/index.js"></script>
