@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/style.css">
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='http://masonry.desandro.com/masonry.pkgd.js'></script>
-    <script src="js/scroll.js"></script>
   </head>
 
   <body>
@@ -199,26 +198,6 @@
             $('.topbar').addClass('topbarScrolledDown');
             $('.grid').addClass('gridScrolledDown');
         }
-        /*var scrollPosition = document.body.scrollTop;
-        $('.topbar').css("top", scrollPosition);
-        console.log(scrollPosition);*/
-      });
-
-      //general scrolling handler
-      $.fn.scrollView = function () {
-        return this.each(function () {
-          $('html, body').animate({
-            scrollTop: $(this).offset().top
-          }, 1000);
-        });
-      }
-
-      //subnav scrolling action
-      $('#categoriesButton').click(function(event) {
-        $('#categoriesGrid').scrollView();
-      });
-      $('#bestsellerButton').click(function(event) {
-        $('#bestsellerGrid').scrollView();
       });
     </script>
     <script src="js/index.js"></script>
