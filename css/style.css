@@ -31,12 +31,12 @@ body {
   height: 120px;
   background-color: #fff;
   -webkit-transition: 0.5s;
-  opacity: 1;
+  /*opacity: 1;*/
 }
 
 .pageNavScrolledDown {
-  height: 0px;
-  opacity: 0;
+  height: 60px;
+  /*opacity: 0;*/
   /*display: none;*/
 }
 
@@ -47,9 +47,15 @@ body {
   text-align: left;
   position: absolute;
   top: 44px;
-  font-size: 22px;
+  font-size: 30px;
   font-weight: 600;
   color: #474747;
+  -webkit-transition: 0.5s;
+}
+
+.pageTitleScrolledDown {
+  top: 16px;
+  font-size: 20px;
 }
 
 
@@ -58,6 +64,11 @@ body {
   width: 158px;
   height: 46px;
   margin: 36px 0 38px 0;
+  -webkit-transition: 0.5s;
+}
+
+.topbarIconSpaceScrolledDown {
+  margin: 2px 0 2px 0;
 }
 
 .topbarIcon {
@@ -167,14 +178,14 @@ body {
   width: 176px;
   height: 220px;
   float: left;
-  background: #666;
+  background: #bbb;
   /*border: 2px solid #333;*/
   border-color: rgb(50, 50, 50);
   margin-bottom: 21px;
   -webkit-transition: 0.2s;
 }
 
-.grid-item:hover { background-color: #999}
+.grid-item:hover { background-color: #888}
 
 .grid-item--genre { height: 176px;}
 
@@ -214,16 +225,35 @@ body {
 }
 
 #book1 {height: 222px;}
-#book1:hover > #bookAndo {-webkit-filter: blur(5px);}
+#book1:hover > #bookCover1 {-webkit-filter: blur(5px); opacity: 0.5;}
 #book1:hover > #bookTitle {opacity: 1;}
 #book1:hover > #bookSubtitle {opacity: 1;}
-#bookAndo {background-image: url(../images/bookCovers/bookCover1.jpg);}
+#bookCover1 {background-image: url(../images/bookCovers/bookCover1.jpg);}
 
 #book2 {height: 247px;}
-#book2:hover > #bookMonet {-webkit-filter: blur(5px);}
+#book2:hover > #bookCover2 {-webkit-filter: blur(5px); opacity: 0.5;}
 #book2:hover > #bookTitle {opacity: 1;}
 #book2:hover > #bookSubtitle {opacity: 1;}
-#bookMonet {background-image: url(../images/bookCovers/bookCover2.jpg);}
+#bookCover2 {background-image: url(../images/bookCovers/bookCover2.jpg);}
+
+#book3 {height: 297px;}
+#book3:hover > #bookCover3 {-webkit-filter: blur(5px); opacity: 0.5;}
+#book3:hover > #bookTitle {opacity: 1;}
+#book3:hover > #bookSubtitle {opacity: 1;}
+#bookCover3 {background-image: url(../images/bookCovers/bookCover3.jpg);}
+
+#book4 {height: 265px;}
+#book4:hover > #bookCover4 {-webkit-filter: blur(5px); opacity: 0.5;}
+#book4:hover > #bookTitle {opacity: 1;}
+#book4:hover > #bookSubtitle {opacity: 1;}
+#bookCover4 {background-image: url(../images/bookCovers/bookCover4.jpg);}
+
+#book5 {height: 265px;}
+#book5:hover > #bookCover5 {-webkit-filter: blur(5px); opacity: 0.5;}
+#book5:hover > #bookTitle {opacity: 1;}
+#book5:hover > #bookSubtitle {opacity: 1;}
+#bookCover5 {background-image: url(../images/bookCovers/bookCover5.jpg);}
+
 
 #bookTitle {
   position: absolute;

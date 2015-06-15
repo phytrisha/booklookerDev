@@ -29,18 +29,30 @@
 
       <div class="grid" id="bestsellerGrid">
           <div class="grid-item" id="book1">
-            <div class="book" id="bookAndo"></div>
+            <div class="book" id="bookCover1"></div>
             <span id="bookTitle">Ando</span>
             <span id="bookSubtitle">Tadao Ando</span>
           </div>
           <div class="grid-item" id="book2">
-            <div class="book" id="bookMonet"></div>
+            <div class="book" id="bookCover2"></div>
             <span id="bookTitle">Monet</span>
             <span id="bookSubtitle">Claude Monet</span>
           </div>
-          <div class="grid-item grid-item--height3"></div>
-          <div class="grid-item grid-item--height2"></div>
-          <div class="grid-item"></div>
+          <div class="grid-item" id="book3">
+            <div class="book" id="bookCover3"></div>
+            <span id="bookTitle">Un Amor Dangereux</span>
+            <span id="bookSubtitle">Ben Okri</span>
+          </div>
+          <div class="grid-item" id="book4">
+            <div class="book" id="bookCover4"></div>
+            <span id="bookTitle">By Blood</span>
+            <span id="bookSubtitle">Ellen Ulman</span>
+          </div>
+          <div class="grid-item" id="book5">
+            <div class="book" id="bookCover5"></div>
+            <span id="bookTitle">Greece On My Wheels</span>
+            <span id="bookSubtitle">Edward Enfield</span>
+          </div>
           <div class="grid-item grid-item--height2"></div>
           <div class="grid-item"></div>
           <div class="grid-item grid-item--height3"></div>
@@ -192,11 +204,15 @@
             $('.pageNav').removeClass('pageNavScrolledDown');
             $('.topbar').removeClass('topbarScrolledDown');
             $('.grid').removeClass('gridScrolledDown');
+            $('.topbarIconSpace').removeClass('topbarIconSpaceScrolledDown');
+            $('.pageTitle').removeClass('pageTitleScrolledDown');
         }
         else {
             $('.pageNav').addClass('pageNavScrolledDown');
             $('.topbar').addClass('topbarScrolledDown');
             $('.grid').addClass('gridScrolledDown');
+            $('.topbarIconSpace').addClass('topbarIconSpaceScrolledDown');
+            $('.pageTitle').addClass('pageTitleScrolledDown');
         }
       });
     </script>
