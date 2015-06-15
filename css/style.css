@@ -125,8 +125,14 @@ body {
 @media (min-width: 960px) {.topbar { width: 960px;}}
 @media (min-width: 1157px) {.topbar { width: 1156px;}}
 
+@media (min-width: 372px) {.content { width: 372px;}}
+@media (min-width: 568px) {.content { width: 568px;}}
+@media (min-width: 764px) {.content { width: 764px;}}
+@media (min-width: 960px) {.content { width: 960px;}}
+@media (min-width: 1157px) {.content { width: 1156px;}}
+
 .content {
-  width: auto;
+  /*width: auto;*/
   max-width: 1156px;
   position: relative;
   margin: 0 auto;
