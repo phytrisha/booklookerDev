@@ -1,0 +1,254 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body { 
+  font-family: Mark Pro, Helvetica, sans-serif;
+  margin: 0 0 0 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none; /* no underline */
+}
+
+
+/* ---- topbar ---- */
+
+.topbar {
+  width: 1156px;
+  height: 180px;
+  margin: 0 auto 0 auto;
+  background-color: #fff;
+  position: fixed;
+  z-index: 999;
+  -webkit-transition: 0.5s;
+}
+
+.topbarScrolledDown {
+  height: 60px;
+}
+
+/* ---- main Navigation ---- */
+
+.pageNav {
+  width: 100%;
+  height: 120px;
+  background-color: #fff;
+  -webkit-transition: 0.5s;
+  /*opacity: 1;*/
+}
+
+.pageNavScrolledDown {
+  height: 60px;
+  /*opacity: 0;*/
+  /*display: none;*/
+}
+
+.pageTitle {
+  margin: 0 auto 0 20px;
+  text-align: left;
+  position: absolute;
+  top: 44px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #474747;
+  -webkit-transition: 0.5s;
+}
+
+.pageTitleScrolledDown {
+  top: 16px;
+  font-size: 20px;
+}
+
+.topbarIconSpace {
+  float: right;
+  width: 158px;
+  height: 36px;
+  margin: 36px 0 38px 0;
+  -webkit-transition: 0.5s;
+}
+
+.topbarIconSpaceScrolledDown {
+  margin: 7px 0 7px 0;
+}
+
+.topbarIcon {
+  width: 36px;
+  height: 36px;
+  float: left;
+  opacity: 0.5;
+  -webkit-transition: 0.1s;
+}
+
+.topbarIcon.scrolled-down { display: none;}
+
+.topbarIcon:hover {opacity: 1.0;}
+
+#search {background-image: url(../images/icons/topbarSearch.svg);}
+#sell {
+  margin: 0 10px 0 10px;
+  background-image: url(../images/icons/topbarSell.svg);
+}
+#user {background-image: url(../images/icons/topbarUser.svg);}
+
+/* ---- sub Navigation ---- */
+
+.subNav {
+  width: 100%;
+  height: 60px;
+  position: relative;
+  background-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f0f1ea;
+}
+
+.navBullet {
+  top: 18px;
+  margin-left: 20px;
+  position: relative;
+  text-decoration: none;
+  opacity: 0.5;
+  -webkit-transition: all 0.25s ease-in-out 0s;
+}
+
+.navBullet:hover {
+  opacity: 1.0;
+}
+
+.navBullet:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -4px;
+  left: 0;
+  background-color: #c89969;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  -webkit-transition: all 0.25s ease-in-out 0s;
+}
+
+.navBullet:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+}
+
+.navBulletActive {
+  opacity: 1.0;
+}
+
+.navBulletInactive {
+  opacity: 0.5;
+}
+
+/* ---- subBar for Book ---- */
+
+.subBar {
+  width: 100%;
+  height: 60px;
+  top: 240px;
+  position: relative;
+  background-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f0f1ea;
+}
+
+/* ---- make topbar responsive ---- */
+@media (min-width: 372px) {.topbar { width: 372px;}}
+@media (min-width: 568px) {.topbar { width: 568px;}}
+@media (min-width: 764px) {.topbar { width: 764px;}}
+@media (min-width: 960px) {.topbar { width: 960px;}}
+@media (min-width: 1157px) {.topbar { width: 1156px;}}
+
+@media (min-width: 372px) {.content { width: 372px;}}
+@media (min-width: 568px) {.content { width: 568px;}}
+@media (min-width: 764px) {.content { width: 764px;}}
+@media (min-width: 960px) {.content { width: 960px;}}
+@media (min-width: 1157px) {.content { width: 1156px;}}
+
+.content {
+  /*width: auto;*/
+  max-width: 1156px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.title {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+/* ---- grid ---- */
+
+.grid {
+  position: relative;
+  margin: 0 auto 0 auto;
+  top: 220px;
+  -webkit-transition: 0.5s;
+}
+
+.gridScrolledDown {
+  top: 100px;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+/* ---- slider ---- */
+
+#container{
+  margin:0 auto;
+  width: 100%;
+  top: 200px;
+  position: relative;
+}
+
+#banner-fade,
+#banner-slide{
+  height: 470px;
+  max-width: 1156px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+ul.bjqs-controls.v-centered li a{
+  display:block;
+  padding:10px;
+  background:#fff;
+  color:#000;
+  text-decoration: none;
+}
+
+ul.bjqs-controls.v-centered li a:hover{
+  background:#000;
+  color:#fff;
+}
+
+ol.bjqs-markers li a{
+  padding:5px 10px;
+  background:#000;
+  color:#fff;
+  margin:5px;
+  text-decoration: none;
+}
+
+ol.bjqs-markers li.active-marker a,
+ol.bjqs-markers li a:hover{
+  background: #999;
+}
+
+p.bjqs-caption{
+  background: rgba(255,255,255,0.5);
+}
+

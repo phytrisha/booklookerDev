@@ -272,7 +272,7 @@ a {
 #book4:hover > .bookBuyIcon {opacity: 1;}
 #bookCover4 {background-image: url(../images/bookCovers/bookCover4.jpg);}
 
-#book5 {height: 265px;}
+#book5 {height: 270px;}
 #book5:hover > #bookCover5 {opacity: 0.2;}
 #book5:hover > #bookTitle {opacity: 1;}
 #book5:hover > #bookSubtitle {opacity: 1;}
@@ -326,6 +326,10 @@ a {
   -webkit-transition: 0.2s;
 }
 
+.bookLookIcon:hover {
+  background-color: yellow;
+}
+
 .bookBuyIcon {
   position: absolute;
   top: 100%;
@@ -338,6 +342,9 @@ a {
   -webkit-transition: 0.2s;
 }
 
+.bookBuyIcon:hover {
+  background-color: yellow;
+}
 
 
 
