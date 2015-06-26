@@ -291,7 +291,7 @@ a {
 
 #bookTitle {
   position: absolute;
-  top: 15%;
+  top: 30%;
   width: 176px;
   text-align: center;
   font-size: 10pt;
@@ -303,7 +303,7 @@ a {
 
 #bookSubtitle {
   position: absolute;
-  top: 15%;
+  top: 30%;
   width: 176px;
   margin-top: 22px;
   text-align: center;
