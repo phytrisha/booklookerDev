@@ -198,7 +198,6 @@ a {
   /*border: 2px solid #333;*/
   border-color: rgb(50, 50, 50);
   margin-bottom: 19px;
-  -webkit-transition: 0.2s;
 }
 
 .grid-item:hover { background-color: #232a41}
@@ -237,55 +236,54 @@ a {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  -webkit-transition: 0.2s; 
 }
 
 #book1 {height: 222px;}
 #book1:hover > #bookCover1 {opacity: 0.2;}
-#book1:hover > #bookTitle {opacity: 1;}
-#book1:hover > #bookSubtitle {opacity: 1;}
-#book1:hover > .bookLookIcon {opacity: 1;}
-#book1:hover > .bookBuyIcon {opacity: 1;}
+#book1:hover > #bookTitle {visibility: visible;}
+#book1:hover > #bookSubtitle {visibility: visible;}
+#book1:hover > .bookLookIcon {visibility: visible;}
+#book1:hover > .bookBuyIcon {visibility: visible;}
 #bookCover1 {background-image: url(../images/bookCovers/bookCover1.jpg);}
 
 #book2 {height: 247px;}
 #book2:hover > #bookCover2 {opacity: 0.2;}
-#book2:hover > #bookTitle {opacity: 1;}
-#book2:hover > #bookSubtitle {opacity: 1;}
-#book2:hover > .bookLookIcon {opacity: 1;}
-#book2:hover > .bookBuyIcon {opacity: 1;}
+#book2:hover > #bookTitle {visibility: visible;}
+#book2:hover > #bookSubtitle {visibility: visible;}
+#book2:hover > .bookLookIcon {visibility: visible;}
+#book2:hover > .bookBuyIcon {visibility: visible;}
 #bookCover2 {background-image: url(../images/bookCovers/bookCover2.jpg);}
 
 #book3 {height: 297px;}
 #book3:hover > #bookCover3 {opacity: 0.2;}
-#book3:hover > #bookTitle {opacity: 1;}
-#book3:hover > #bookSubtitle {opacity: 1;}
-#book3:hover > .bookLookIcon {opacity: 1;}
-#book3:hover > .bookBuyIcon {opacity: 1;}
+#book3:hover > #bookTitle {visibility: visible;}
+#book3:hover > #bookSubtitle {visibility: visible;}
+#book3:hover > .bookLookIcon {visibility: visible;}
+#book3:hover > .bookBuyIcon {visibility: visible;}
 #bookCover3 {background-image: url(../images/bookCovers/bookCover3.jpg);}
 
 #book4 {height: 265px;}
 #book4:hover > #bookCover4 {opacity: 0.2;}
-#book4:hover > #bookTitle {opacity: 1;}
-#book4:hover > #bookSubtitle {opacity: 1;}
-#book4:hover > .bookLookIcon {opacity: 1;}
-#book4:hover > .bookBuyIcon {opacity: 1;}
+#book4:hover > #bookTitle {visibility: visible;}
+#book4:hover > #bookSubtitle {visibility: visible;}
+#book4:hover > .bookLookIcon {visibility: visible;}
+#book4:hover > .bookBuyIcon {visibility: visible;}
 #bookCover4 {background-image: url(../images/bookCovers/bookCover4.jpg);}
 
 #book5 {height: 270px;}
 #book5:hover > #bookCover5 {opacity: 0.2;}
-#book5:hover > #bookTitle {opacity: 1;}
-#book5:hover > #bookSubtitle {opacity: 1;}
-#book5:hover > .bookLookIcon {opacity: 1;}
-#book5:hover > .bookBuyIcon {opacity: 1;}
+#book5:hover > #bookTitle {visibility: visible;}
+#book5:hover > #bookSubtitle {visibility: visible;}
+#book5:hover > .bookLookIcon {visibility: visible;}
+#book5:hover > .bookBuyIcon {visibility: visible;}
 #bookCover5 {background-image: url(../images/bookCovers/bookCover5.jpg);}
 
 #book6 {height: 270px;}
 #book6:hover > #bookCover6 {opacity: 0.2;}
-#book6:hover > #bookTitle {opacity: 1;}
-#book6:hover > #bookSubtitle {opacity: 1;}
-#book6:hover > .bookLookIcon {opacity: 1;}
-#book6:hover > .bookBuyIcon {opacity: 1;}
+#book6:hover > #bookTitle {visibility: visible;}
+#book6:hover > #bookSubtitle {visibility: visible;}
+#book6:hover > .bookLookIcon {visibility: visible;}
+#book6:hover > .bookBuyIcon {visibility: visible;}
 #bookCover6 {background-image: url(../images/bookCovers/bookCover6.jpg);}
 
 
@@ -297,8 +295,7 @@ a {
   font-size: 10pt;
   font-weight: 500;
   color: #fff;
-  -webkit-transition: 0.2s;
-  opacity: 0;
+  visibility: hidden;
 }
 
 #bookSubtitle {
@@ -310,8 +307,7 @@ a {
   font-size: 9pt;
   font-weight: 200;
   color: #fff;
-  -webkit-transition: 0.2s;
-  opacity: 0;
+  visibility: hidden;
 }
 
 .bookLookIcon {
@@ -322,12 +318,12 @@ a {
   width: 36px;
   height: 36px;
   background-image: url('../images/icons/lookIcon.png');
-  opacity: 0;
-  -webkit-transition: 0.2s;
+  visibility: hidden;
+  opacity: 0.5;
 }
 
 .bookLookIcon:hover {
-  background-color: yellow;
+  opacity: 1.0;
 }
 
 .bookBuyIcon {
@@ -338,12 +334,12 @@ a {
   width: 36px;
   height: 36px;
   background-image: url('../images/icons/buyIcon.png');
-  opacity: 0;
-  -webkit-transition: 0.2s;
+  visibility: hidden;
+  opacity: 0.5;
 }
 
 .bookBuyIcon:hover {
-  background-color: yellow;
+  opacity: 1.0
 }
 
 
