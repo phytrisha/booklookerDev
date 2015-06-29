@@ -217,6 +217,38 @@ p {
   opacity: 0.8;
 }
 
+.facts {
+  width: 100%;
+  background-color: red;
+  height: 60px;
+  position: relative;
+  top: 60px;
+}
+
+.factsColumn {
+  height: 100%;
+  position: relative;
+  display: inline;
+}
+
+#factsColumn1 {
+  background-color: blue;
+  width: 32%;
+  float: left;
+}
+
+#factsColumn2 {
+  background-color: green;
+  width: 32%;
+  float: left;
+  margin-left: 2%;
+}
+
+#factsColumn3 {
+  background-color: yellow;
+  width: 32%;
+  float: right;
+}
 /* ---- subBar for Book ---- */
 
 .subBar {
@@ -236,6 +268,26 @@ p {
   font-size: 14px;
   font-weight: 600;
   opacity: 0.6;
+}
+
+.favoriteIcon {
+  width: 60px;
+  height: 60px;
+  float: left;
+  background-color: red;
+  display: inline;
+}
+
+.buyIcon {
+  width: 60px;
+  height: 60px;
+  float: right;
+  background-color: red;
+  display: inline;
+}
+
+.subBarTitle {
+  display: inline;
 }
 
 /* ---- make topbar responsive ---- */
