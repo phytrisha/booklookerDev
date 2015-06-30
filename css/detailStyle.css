@@ -1,3 +1,8 @@
+/* colors:
+highlight-orange: #f75f0b
+dark-blue: #232a41
+*/
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -19,8 +24,16 @@ p {
   font-weight: 200;
   -webkit-margin-before: 0px;
   -webkit-margin-after: 0px;
+  color: #232a41; 
 }
 
+h1 {
+  color: #232a41;
+}
+
+h2 {
+  color: #232a41;
+}
 
 /* ---- topbar ---- */
 
@@ -48,24 +61,29 @@ p {
   text-align: center;
   position: relative;
   border-radius: 4px;
-  border: 2px solid #ff7326;
+  border: 2px solid #f75f0b;
   -webkit-transition: 0.1s;
   opacity: 0.8;
 }
 
 .buyButton:hover {
-  background-color: #ff7326;
-}
-
-.buyButton:active {
-  border: 2px solid #f75f0b;
   background-color: #f75f0b;
 }
 
+.buyButton:hover > .priceTag {
+  color: #fff;
+}
+
+.buyButton:active {
+  border: 2px solid #cc5b1f;
+  background-color: #cc5b1f;
+}
+
 .priceTag {
-  -webkit-margin-before: 0.0em;
-  -webkit-margin-after: 0.0em;
-  margin-top: 8px;
+  margin-top: 7px;
+  font-weight: 600;
+  color: #f75f0b;
+  -webkit-transition: 0.1s;
 }
 
 .bottomSpace {
@@ -98,7 +116,7 @@ p {
   top: 44px;
   font-size: 30px;
   font-weight: 600;
-  color: #474747;
+  color: #232a41;
   -webkit-transition: 0.5s;
 }
 
@@ -156,6 +174,7 @@ p {
   position: relative;
   text-decoration: none;
   opacity: 0.5;
+  color: #232a41;
   -webkit-transition: all 0.25s ease-in-out 0s;
 }
 
@@ -170,7 +189,7 @@ p {
   height: 1px;
   bottom: -4px;
   left: 0;
-  background-color: #c89969;
+  background-color: #f75f0b;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -webkit-transition: all 0.25s ease-in-out 0s;
@@ -219,7 +238,6 @@ p {
 
 .facts {
   width: 100%;
-  background-color: red;
   height: 60px;
   position: relative;
   top: 60px;
@@ -231,24 +249,87 @@ p {
   display: inline;
 }
 
+.factsColumn:after {
+  content:””;
+  display:table;
+  clear:both;
+}
+
 #factsColumn1 {
-  background-color: blue;
   width: 32%;
   float: left;
 }
 
 #factsColumn2 {
-  background-color: green;
   width: 32%;
   float: left;
   margin-left: 2%;
 }
 
 #factsColumn3 {
-  background-color: yellow;
   width: 32%;
-  float: right;
+  float: left;
+  margin-left: 2%;
 }
+
+.factLabel {
+  height: 100%;
+  width: 80px;
+  position: relative;
+  float: left;  
+}
+
+.factLabelText {
+  line-height: 20px;
+  font-weight: 200;
+  color: #232a41;
+  opacity: 0.8;
+}
+
+.factContent {
+  height: 100%;
+  width: 165px;
+  position: relative;
+  float: left;
+}
+
+.factContentText {
+  line-height: 20px;
+  font-weight: 400;
+  color: #232a41;
+}
+
+.starSpace {
+  width: 208px;
+  height: 32px;
+  margin: auto;
+}
+
+.star {
+  width: 32px;
+  height: 32px;
+  margin-left: 12px;
+  float: left;
+}
+
+.firstStar {
+  margin-left: 0px;
+}
+
+#activeStar {
+  background-image: url(../images/icons/activeStar.svg);
+}
+
+#inactiveStar {
+  background-image: url(../images/icons/inactiveStar.svg);
+  opacity: 0.4;
+}
+
+.ratingLabel {
+  text-align: center;
+  margin-top: 9px;
+}
+
 /* ---- subBar for Book ---- */
 
 .subBar {
@@ -262,6 +343,7 @@ p {
   font-size: 24px;
   font-weight: 600;
   -webkit-margin-after: 13px;
+  -webkit-margin-before: 0px;
 }
 
 .authorTitle {
@@ -274,23 +356,45 @@ p {
   width: 60px;
   height: 60px;
   float: left;
-  background-color: red;
+  background-image: url(../images/icons/favoriteIcon.png);
   display: inline;
+  opacity: 0.5;
+  -webkit-transition: 0.1s;
+}
+
+.favoriteIcon:hover {
+  opacity: 1.0;
 }
 
 .buyIcon {
   width: 60px;
   height: 60px;
   float: right;
-  background-color: red;
+  background-image: url(../images/icons/buyIconDetail.png);
   display: inline;
+  opacity: 0.5;
+  -webkit-transition: 0.1s;
+}
+
+.buyIcon:hover {
+  opacity: 1.0;
 }
 
 .subBarTitle {
-  display: inline;
+  float: left;
+  height: 60px;
+  width: 84%;
+  margin: 0 auto;
 }
 
-/* ---- make topbar responsive ---- */
+.subBarTitle:after {
+  content:””;
+  display:table;
+  clear:both;
+}
+
+/* ---- make stuff responsive ---- */
+
 @media (min-width: 372px) {
   .topbar { width: 372px;}
   .content { width: 372px;}
@@ -393,7 +497,7 @@ p.bjqs-caption{
 }
 
 .previousButton {
-  background-image: url(../images/icons/slideButton.png);
+  background-image: url(../images/icons/slideButtonLeft.svg);
   width: 20px;
   height: 38px;
   opacity: 0.5;
@@ -405,10 +509,9 @@ p.bjqs-caption{
 }
 
 .nextButton {
-  background-image: url(../images/icons/slideButton.png);
+  background-image: url(../images/icons/slideButtonRight.svg);
   width: 20px;
   height: 38px;
-  transform: rotate(180deg);
   opacity: 0.5;
   -webkit-transition: 0.1s;
 }

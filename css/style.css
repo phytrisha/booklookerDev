@@ -110,6 +110,7 @@ a {
   position: relative;
   text-decoration: none;
   opacity: 0.5;
+  color: #232a41;
   -webkit-transition: all 0.25s ease-in-out 0s;
 }
 
