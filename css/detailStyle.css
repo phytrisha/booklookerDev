@@ -397,28 +397,28 @@ h2 {
 
 @media (min-width: 372px) {
   .topbar { width: 372px;}
-  .content { width: 372px;}
+  .allContent { width: 372px;}
 }
 @media (min-width: 568px) {
   .topbar { width: 568px;}
-  .content { width: 568px;}
+  .allContent { width: 568px;}
 }
 @media (min-width: 764px) {
   .topbar { width: 764px;}
-  .content { width: 764px;}
+  .allContent { width: 764px;}
 }
 @media (min-width: 960px) {
   .topbar { width: 960px;}
-  .content { width: 960px;}
+  .allContent { width: 960px;}
   .detailContent { width: 766px;}
 }
 @media (min-width: 1157px) {
   .topbar { width: 1156px;}
-  .content { width: 1156px;}
+  .allContent { width: 1156px;}
   .detailContent { width: 766px;}
 }
 
-.content {
+.allContent {
   /*width: auto;*/
   max-width: 1156px;
   position: relative;
