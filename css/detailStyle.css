@@ -64,16 +64,7 @@ h2 {
   /*opacity: 1;*/
 }
 
-@media (max-width: 764px) {
-  .pageNav {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .subNav {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
+
 
 .pageNavScrolledDown {
   height: 50px;
@@ -591,6 +582,24 @@ p.bjqs-caption{
 }
 
 
+@media (max-width: 764px) {
+  .pageNav {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .subNav {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .subBarTitle {
+    width: 78%;
+  }
+}
 
+@media (max-width: 568px) {
+  .subBarTitle {
+    width: 67%;
+  }
+}
 
 
