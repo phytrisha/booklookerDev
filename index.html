@@ -30,9 +30,21 @@
             </div>
           </div>
           <div class="subNav">
-            <span class="navBullet navBulletFirst" id="bestsellerButton">Bestseller</span>
-            <span class="navBullet" id="recommendButton">Recommendations</span>
-            <span class="navBullet" id="categoriesButton">Categories</span>
+            <span class="navBullet navBulletFirst" id="bestsellerButton">
+              <a href="#bestsellerSection">
+                Bestseller
+              </a>
+            </span>
+            <span class="navBullet" id="recommendButton">
+              <a href="#recommendSection">
+                Recommendations
+              </a>
+            </span>
+            <span class="navBullet" id="categoriesButton">
+              <a href="#categoriesSection">
+                Categories
+              </a>
+            </span>
           </div>
         </div>
       </nav>
@@ -86,22 +98,48 @@
               <div class="bookBuyIcon"></div>
             </div>            
           </a>
-          <div class="grid-item grid-item--book"></div>
-          <div class="grid-item grid-item--book grid-item--height3"></div>
-          <div class="grid-item grid-item--book grid-item--height2"></div>
-          <div class="grid-item grid-item--book grid-item--height4"></div>
+          <div class="grid-item grid-item--book" id="book7">
+            <div class="book" id="bookCover7"></div>
+            <span id="bookTitle">Junky</span>
+            <span id="bookSubtitle">William S. Burroughs</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="book8">
+            <div class="book" id="bookCover8"></div>
+            <span id="bookTitle">The Road of Excess</span>
+            <span id="bookSubtitle">Marcus Boon</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="book9">
+            <div class="book" id="bookCover9"></div>
+            <span id="bookTitle">The Water Knife</span>
+            <span id="bookSubtitle">Paolo Bacigalupi</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="book10">
+            <div class="book" id="bookCover10"></div>
+            <span id="bookTitle">The Name of The Rose</span>
+            <span id="bookSubtitle">Umberto Eco</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
         </div>
       </div>
 
       <!-- Recommendations -->
-      <div class="section" id="bestsellerSection">
-        <div class="sectionTitle" id="bestsellerSectionTitle">
+      <div class="section" id="recommendSection">
+        <div class="sectionTitle" id="recommendSectionTitle">
           Recommendations
         </div>
         <div class="grid" id="recommendGrid">
             <a href="recommendations/20mostPsyBooks.html">
               <div class="grid-item rec4Column" id="recTop20PsyBooks">
-                <h2 class="blogPostTitle">11 most influencial</br> psychedelic books</h2>
+                <h2 class="blogPostTitle">11 most influencial</br>psychedelic books</h2>
+                <div class="recUnderliner" id="upperUnderliner"></div>
+                <div class="recUnderliner" id="lowerUnderliner"></div>
               </div>
             </a>
             <div class="grid-item rec1Column" id="recBeatGeneration">
@@ -138,8 +176,8 @@
 
       <!-- Genre -->
 
-      <div class="section" id="bestsellerSection">
-        <div class="sectionTitle" id="bestsellerSectionTitle">
+      <div class="section" id="categoriesSection">
+        <div class="sectionTitle" id="categoriesSectionTitle">
           Categories
         </div>
         <div class="grid" id="categoriesGrid">
@@ -153,35 +191,35 @@
           <div class="grid-item grid-item--genre">
             <div class="genreBackgroundImage" id="genreBgLaw"></div>
             <div class="genre">
-              <div class="genreIcon"></div>
+              <div class="genreIcon" id="genreIconLaw"></div>
               <div class="genreText">Law</div>
             </div>
           </div>
           <div class="grid-item grid-item--genre">
             <div class="genreBackgroundImage" id="genreBgEconomics"></div>
             <div class="genre">
-              <div class="genreIcon"></div>
+              <div class="genreIcon" id="genreIconEconomics"></div>
               <div class="genreText">Economics</div>
             </div>
           </div>
           <div class="grid-item grid-item--genre">
             <div class="genreBackgroundImage" id="genreBgHumanities"></div>
             <div class="genre">
-              <div class="genreIcon"></div>
+              <div class="genreIcon" id="genreIconHumanities"></div>
               <div class="genreText">Humanities</div>
             </div>
           </div>
           <div class="grid-item grid-item--genre">
             <div class="genreBackgroundImage" id="genreBgArtDesign"></div>
             <div class="genre">
-              <div class="genreIcon"></div>
+              <div class="genreIcon" id="genreIconArtDesign"></div>
               <div class="genreText">Art & Design</div>
             </div>
           </div>
           <div class="grid-item grid-item--genre">
             <div class="genreBackgroundImage" id="genreBgMusic"></div>
             <div class="genre">
-              <div class="genreIcon"></div>
+              <div class="genreIcon" id="genreIconMusic"></div>
               <div class="genreText">Music</div>
             </div>
           </div>
@@ -195,34 +233,34 @@
           <div class="grid-item grid-item--genre">
             <div class="genreBackgroundImage" id="genreBgSports"></div>
             <div class="genre">
-              <div class="genreIcon"></div>
+              <div class="genreIcon" id="genreIconSports"></div>
               <div class="genreText">Sports</div>
             </div>
           </div>
           <div class="grid-item grid-item--genre">
             <div class="genreBackgroundImage" id="genreBgCooking"></div>
             <div class="genre">
-              <div class="genreIcon"></div>
+              <div class="genreIcon" id="genreIconCooking"></div>
               <div class="genreText">Cooking</div>
             </div>
           </div>
           <div class="grid-item grid-item--genre">
             <div class="genreBackgroundImage" id="genreBgPolitics"></div>
             <div class="genre">
-              <div class="genreIcon"></div>
+              <div class="genreIcon" id="genreIconPolitics"></div>
               <div class="genreText">Politics</div>
             </div>
           </div>
           <div class="grid-item grid-item--genre">
             <div class="genreBackgroundImage" id="genreBgTechnology"></div>
             <div class="genre">
-              <div class="genreIcon"></div>
+              <div class="genreIcon" id="genreIconTechnology"></div>
               <div class="genreText">Technology</div>
             </div>
           </div>
           <div class="grid-item grid-item--genre">
             <div class="genreBackgroundImage" id="genreBgLanguages"></div>
-            <div class="genre">
+            <div class="genre" id="genreIconLanguages">
               <div class="genreIcon"></div>
               <div class="genreText">Languages</div>
             </div>
@@ -230,21 +268,21 @@
           <div class="grid-item grid-item--genre">
             <div class="genreBackgroundImage" id="genreBgNovels"></div>
             <div class="genre">
-              <div class="genreIcon"></div>
+              <div class="genreIcon" id="genreIconNovels"></div>
               <div class="genreText">Novels</div>
             </div>
           </div>
           <div class="grid-item grid-item--genre">
             <div class="genreBackgroundImage" id="genreBgDrama"></div>
             <div class="genre">
-              <div class="genreIcon"></div>
+              <div class="genreIcon" id="genreIconDrama"></div>
               <div class="genreText">Drama</div>
             </div>
           </div>
           <div class="grid-item grid-item--genre">
             <div class="genreBackgroundImage" id="genreBgThrillers"></div>
             <div class="genre">
-              <div class="genreIcon"></div>
+              <div class="genreIcon" id="genreIconThrillers"></div>
               <div class="genreText">Thrillers</div>
             </div>
           </div>
@@ -252,36 +290,36 @@
             <div class="genreBackgroundImage" id="genreBgCrime"></div>
             <a href="categories/categoryCrime.html">
               <div class="genre">
-                <div class="genreIcon"></div>
+                <div class="genreIcon" id="genreIconCrime"></div>
                 <div class="genreText">Crime</div>
               </div>            
             </a>
           </div>
           <div class="grid-item grid-item--genre">
-            <div class="genreBackgroundImage" id="genreBgHistory"></div>
+            <div class="genreBackgroundImage" id="genreBgSciFi"></div>
             <div class="genre">
-              <div class="genreIcon"></div>
-              <div class="genreText">History</div>
+              <div class="genreIcon" id="genreIconSciFi"></div>
+              <div class="genreText">Sci-Fi</div>
             </div>
           </div>
           <div class="grid-item grid-item--genre">
             <div class="genreBackgroundImage" id="genreBgHumor"></div>
             <div class="genre">
-              <div class="genreIcon"></div>
+              <div class="genreIcon" id="genreIconHumor"></div>
               <div class="genreText">Humor</div>
             </div>
           </div>
           <div class="grid-item grid-item--genre">
             <div class="genreBackgroundImage" id="genreBgRomance"></div>
             <div class="genre">
-              <div class="genreIcon"></div>
+              <div class="genreIcon" id="genreIconRomance"></div>
               <div class="genreText">Romance</div>
             </div>
           </div>
           <div class="grid-item grid-item--genre">
             <div class="genreBackgroundImage" id="genreBgOthers"></div>
             <div class="genre">
-              <div class="genreIcon"></div>
+              <div class="genreIcon" id="genreIconOthers"></div>
               <div class="genreText">Others</div>
             </div>
           </div>
@@ -305,6 +343,42 @@
         }
       });
     </script>
+    <script type="text/javascript">
+      $('a[href^=#]').on('click', function(e){
+        var href = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop:($(href).offset().top-140)
+        },'slow');
+        e.preventDefault();
+      });
+    </script>
+
     <script src="js/index.js"></script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

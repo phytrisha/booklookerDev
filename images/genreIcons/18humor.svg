@@ -4,13 +4,16 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="78 -69 176 176" style="enable-background:new 78 -69 176 176;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:4.7637;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
 </style>
 <g id="icon">
 	<g>
-		<polygon class="st0" points="184.1,-1.1 184.1,-33.5 147.9,-33.5 147.9,-1.1 118,71.5 214,71.5 		"/>
-		<path class="st0" d="M164.7,50.1c0-3.9,6.4-7.1,14.3-7.1s14.3,3.2,14.3,7.1"/>
-		<path class="st0" d="M164.7,49.5c0,3.9-6.4,7.1-14.3,7.1s-14.3-3.2-14.3-7.1"/>
+		<path class="st0" d="M139.8,50c0,11.6,11.8,21,26.2,21s26.2-9.4,26.2-21c0,0-12.5,7.9-26.2,7.9S139.8,50,139.8,50z"/>
+		<circle class="st1" cx="166" cy="33.8" r="10.5"/>
+		<path class="st1" d="M166,35.5"/>
+		<path class="st1" d="M197.5-2.7C196.8-19.6,183-33,166-33s-30.8,13.4-31.5,30.3C128-0.9,124,1.5,124,4.2c0,5.8,18.8,10.5,42,10.5
+			s42-4.7,42-10.5C208,1.5,204-0.9,197.5-2.7z"/>
 	</g>
 </g>
 </svg>

@@ -282,6 +282,11 @@ h2 {
   background-color: #232a41;
 }
 
+/*.genre:hover > .genreText {
+  text-decoration: underline;
+}*/
+
+
 .grid-item--book:hover {
   background-color: #232a41;
 }
@@ -310,7 +315,7 @@ h2 {
 .genreText {
   display: inline-block;
   margin-top: 9px;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   color: #fff;
 }
@@ -321,12 +326,19 @@ h2 {
   overflow: hidden;
 }
 
+.grid-item--genre:hover > .genreBackgroundImage {
+  opacity: 0.4;
+}
+
 .genreBackgroundImage {
   width: 100%;
   height: 100%;
   float: left;
-  opacity: 0.4;
+  opacity: 0.1;
+  -webkit-transition: 0.25s;
 }
+
+/* ---- genre BGs ---- */
 
 #genreBgScience {
   background-image: url(../images/genreImages/01Science.jpg);
@@ -408,8 +420,8 @@ h2 {
   background-size: 176px 176px;
   background-repeat: no-repeat;
 }
-#genreBgHistory {
-  background-image: url(../images/genreImages/17History.jpg);
+#genreBgSciFi {
+  background-image: url(../images/genreImages/17SciFi.jpg);
   background-size: 176px 176px;
   background-repeat: no-repeat;
 }
@@ -429,9 +441,100 @@ h2 {
   background-repeat: no-repeat;
 }
 
+/* ---- genre icons ---- */
 
 #genreIconScience {
   background-image: url(../images/genreIcons/01science.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#genreIconLaw {
+  background-image: url(../images/genreIcons/02law.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#genreIconEconomics {
+  background-image: url(../images/genreIcons/03economics.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#genreIconHumanities {
+  background-image: url(../images/genreIcons/04humanities.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#genreIconArtDesign {
+  background-image: url(../images/genreIcons/05artDesign.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#genreIconMusic {
+  background-image: url(../images/genreIcons/06music.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#genreIconSports {
+  background-image: url(../images/genreIcons/08sports.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#genreIconCooking {
+  background-image: url(../images/genreIcons/09cooking.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#genreIconPolitics {
+  background-image: url(../images/genreIcons/10politics.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#genreIconTechnology {
+  background-image: url(../images/genreIcons/11technology.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#genreIconLanguages {
+  background-image: url(../images/genreIcons/12languages.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#genreIconNovels {
+  background-image: url(../images/genreIcons/13novels.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#genreIconDrama {
+  background-image: url(../images/genreIcons/14drama.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#genreIconThrillers {
+  background-image: url(../images/genreIcons/15thrillers.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#genreIconCrime {
+  background-image: url(../images/genreIcons/16crime.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#genreIconSciFi {
+  background-image: url(../images/genreIcons/17sciFi.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#genreIconHumor {
+  background-image: url(../images/genreIcons/18humor.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#genreIconRomance {
+  background-image: url(../images/genreIcons/19romance.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#genreIconOthers {
+  background-image: url(../images/genreIcons/20others.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -483,6 +586,38 @@ h2 {
 #book6:hover > .bookLookIcon {visibility: visible;}
 #book6:hover > .bookBuyIcon {visibility: visible;}
 #bookCover6 {background-image: url(../images/bookCovers/bookCover6.jpg);}
+
+#book7 {height: 293px;}
+#book7:hover > #bookCover7 {opacity: 0.2;}
+#book7:hover > #bookTitle {visibility: visible;}
+#book7:hover > #bookSubtitle {visibility: visible;}
+#book7:hover > .bookLookIcon {visibility: visible;}
+#book7:hover > .bookBuyIcon {visibility: visible;}
+#bookCover7 {background-image: url(../images/bookCovers/bookCover7.jpg);}
+
+#book8 {height: 250px;}
+#book8:hover > #bookCover8 {opacity: 0.2;}
+#book8:hover > #bookTitle {visibility: visible;}
+#book8:hover > #bookSubtitle {visibility: visible;}
+#book8:hover > .bookLookIcon {visibility: visible;}
+#book8:hover > .bookBuyIcon {visibility: visible;}
+#bookCover8 {background-image: url(../images/bookCovers/bookCover8.jpg);}
+
+#book9 {height: 263px;}
+#book9:hover > #bookCover9 {opacity: 0.2;}
+#book9:hover > #bookTitle {visibility: visible;}
+#book9:hover > #bookSubtitle {visibility: visible;}
+#book9:hover > .bookLookIcon {visibility: visible;}
+#book9:hover > .bookBuyIcon {visibility: visible;}
+#bookCover9 {background-image: url(../images/bookCovers/bookCover9.jpg);}
+
+#book10 {height: 272px;}
+#book10:hover > #bookCover10 {opacity: 0.2;}
+#book10:hover > #bookTitle {visibility: visible;}
+#book10:hover > #bookSubtitle {visibility: visible;}
+#book10:hover > .bookLookIcon {visibility: visible;}
+#book10:hover > .bookBuyIcon {visibility: visible;}
+#bookCover10 {background-image: url(../images/bookCovers/bookCover10.jpg);}
 
 
 #bookTitle {
@@ -552,12 +687,10 @@ h2 {
 #recTop20PsyBooks {
   height: 400px;
   background-image: url(../images/recImages/recTop20PsyBooks.png);
-  opacity: 0.75;
-  -webkit-transition: 0.25s;
 }
 
-#recTop20PsyBooks:hover {
-  opacity: 1.0;
+#recTop20PsyBooks:hover > .recUnderliner {
+  -webkit-transform: scaleX(1);
 }
 
 #recBeatGeneration {
@@ -612,6 +745,46 @@ h2 {
   vertical-align: middle;
   color: #fff;
 }
+
+.recUnderliner {
+  width: 263px;
+  height: 4px;
+  background-color: #fff;
+  position: absolute;
+  left: 251px;
+  -webkit-transform: scaleX(0);
+  -webkit-transition: all 0.25s ease-in-out 0s;
+}
+
+#upperUnderliner {
+  top:196px;
+}
+#lowerUnderliner {
+  top: 229px;
+}
+
+/*
+.blogPostTitle:before {
+  content: "";
+  position: absolute;
+  left: 253px;
+  width: 260px;
+  height: 4px;
+  bottom: 0px;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  -webkit-transition: all 0.25s ease-in-out 0s;
+}
+#recTop20PsyBooks:hover > .blogPostTitle:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+}*/
+/*
+.blogPostTitle:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+}*/
 
 .recTextPost {
   color: #fff;

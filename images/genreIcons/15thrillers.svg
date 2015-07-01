@@ -4,13 +4,20 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="78 -69 176 176" style="enable-background:new 78 -69 176 176;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:4.6667;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
 </style>
-<g id="icon">
+<g id="Background">
 	<g>
-		<polygon class="st0" points="184.1,-1.1 184.1,-33.5 147.9,-33.5 147.9,-1.1 118,71.5 214,71.5 		"/>
-		<path class="st0" d="M164.7,50.1c0-3.9,6.4-7.1,14.3-7.1s14.3,3.2,14.3,7.1"/>
-		<path class="st0" d="M164.7,49.5c0,3.9-6.4,7.1-14.3,7.1s-14.3-3.2-14.3-7.1"/>
+		<circle class="st0" cx="166" cy="19" r="36.6"/>
+		<line class="st1" x1="166" y1="-33.2" x2="166" y2="-1.9"/>
+		<line class="st1" x1="166" y1="39.9" x2="166" y2="71.2"/>
+		<line class="st1" x1="186.9" y1="19" x2="218.2" y2="19"/>
+		<line class="st1" x1="113.8" y1="19" x2="145.1" y2="19"/>
 	</g>
+</g>
+<g id="Calque_3">
+</g>
+<g id="icon">
 </g>
 </svg>

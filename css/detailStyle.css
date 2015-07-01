@@ -332,6 +332,63 @@ h2 {
   opacity: 0.4;
 }
 
+
+.sellColumn {
+  height: 100%;
+  position: relative;
+  display: inline;
+}
+
+.sellColumn:after {
+  content:””;
+  display:table;
+  clear:both;
+}
+
+#sellColumn1 {
+  width: 32%;
+  float: left;
+}
+
+#sellColumn2 {
+  width: 32%;
+  float: left;
+  margin-left: 2%;
+}
+
+#sellColumn3 {
+  width: 32%;
+  float: left;
+  margin-left: 2%;
+}
+
+.sellLabel {
+  height: 100%;
+  width: 80px;
+  position: relative;
+  float: left;  
+}
+
+.sellLabelText {
+  line-height: 20px;
+  font-weight: 200;
+  color: #232a41;
+  opacity: 0.8;
+}
+
+.sellContent {
+  height: 100%;
+  width: 165px;
+  position: relative;
+  float: left;
+}
+
+.sellContentText {
+  line-height: 20px;
+  font-weight: 500;
+  color: #232a41;
+}
+
 .ratingLabel {
   text-align: center;
   margin-top: 9px;
@@ -581,6 +638,27 @@ p.bjqs-caption{
   -webkit-transition: 0.1s;
 }
 
+@media (max-width: 960px) {
+  .facts {
+    height: 140px;
+  }
+  .factsColumn {
+    height: 50%;
+  }
+  #factsColumn1 {
+    width: 49%;
+  }
+  #factsColumn2 {
+    width: 49%;
+  }
+  #factsColumn3 {
+    width: 100%;
+    float: none;
+  }
+  .sellContent {
+    width: 160px;
+  }
+}
 
 @media (max-width: 764px) {
   .pageNav {
@@ -594,12 +672,113 @@ p.bjqs-caption{
   .subBarTitle {
     width: 78%;
   }
+  .description {
+    height: 320px;
+  }
+  .sellContent {
+    width: 100px;
+  }
 }
 
 @media (max-width: 568px) {
   .subBarTitle {
     width: 67%;
   }
+  .description {
+    height: 480px;
+  }
+  .descriptionLeft {
+    height: 50%;
+    width: 100%;
+    float: none;
+  }
+  .descriptionRight {
+    height: 50%;
+    width: 100%;
+    float: none;
+  }
+  .facts {
+    height: 200px;
+  }
+  #factsColumn1 {
+    width: 100%;
+    height: 33%;
+    display: block;
+    float: none;
+  }
+  #factsColumn2 {
+    width: 100%;
+    height: 33%;
+    display: block;
+    float: none;
+    margin-left: 0;
+  }
+  #factsColumn3 {
+    width: 100%;
+    height: 33%;
+    display: block;
+    float: none;
+    margin-left: 0;
+  }
+  .factContent {
+    margin-left: 15px;
+  }
+  .sellerCell {
+    height: 120px;
+  }
+  #sellColumn1 {
+    width: 50%;
+    height: 50%;
+  }
+  #sellColumn2 {
+    width: 50%;
+    height: 50%;
+    margin-left: 0;
+  }
+  #sellColumn3 {
+    width: 100%;
+    height: 50%;
+    display: block;
+    float: left;
+    margin-left: 0;
+  }
+  .buyButton {
+    margin: auto;
+    float: none;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
