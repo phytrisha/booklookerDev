@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="user-scalable=0, initial-scale=1.0">
+    <title>Booklooker</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bjqs.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <!--<link rel="stylesheet" href="../css/demo.css">-->
+    <script src='../js/jquery.min.js'></script>
+    <script src='../js/masonry.pkgd.js'></script>
+    <script src="../js/bjqs-1.3.min.js"></script>
+  </head>
+
+  <body>
+    <div class="content">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="pageNav">
+            <a href="../index.html">
+              <div class="pageTitle">booklooker</div>
+            </a>
+            <div class="topbarIconSpace">
+              <div class="topbarIcon" id="search"></div>
+              <div class="topbarIcon" id="sell"></div>
+              <div class="topbarIcon" id="user"></div>
+            </div>
+          </div>
+          <div class="subNav">
+            <span class="navBullet navBulletFirst" id="bestsellerButton">Bestseller</span>
+            <span class="navBullet" id="recommendButton">Recomendations</span>
+            <span class="navBullet" id="categoriesButton">Categories</span>
+          </div>
+        </div>
+      </nav>
+
+      <div class="section" id="bestsellerSection">
+        <div class="sectionTitle" id="bestsellerSectionTitle">
+          Recommendations
+        </div>
+        <h2 class="recommendDetailTitle">
+          11 most influencial</br>psychedelic books
+        </h2>
+
+        <div class="recommendContent">
+          <div class="grid" id="bestsellerGrid">
+            <!-- Introduction -->
+            <div class="grid-item recGridSpacingItem" id="recGridSpacingItem1"></div>
+            <div class="grid-item recGridItem recGridIntroText">
+              <p>Psychedelics are a perennially popular tool for young seekers—and they’re a double-edged sword. They’re responsible for everything from the birth of the Apple computer (Steve Jobs  was an acid-head in college) to the discovery of DNA (Francis Crick had a vision of the double helix while on LSD) to a whole lot of acid burn-outs and casualties. What’s the dividing line? There are a lot of variables at work here: the two biggest being the individual user’s chemical makeup and the chemical purity of whatever they’re taking. Another is set and setting, meaning the mindset you’re in, place you’re in and people you’re around. And while we know a lot more about these things as a culture now than we did in the 1960s, thanks to a lot of scholarly, academic and scientific work that’s been done on psychedelics—not to mention the Internet—people are also doing all kinds of crazy f*kd up research chemicals, using casually to party and generally being nihilistic and irresponsible. After all, we live in the age of krokodil, do we not? Psychedelics are sacred. Done right, they can catalyze deep spiritual seeking and provide a glimpse of the “other side.” Done wrong, they can mash your shit up but good. You cannot, as Bill Hicks once said, “take mushrooms and go to Astro World” and expect to have a good time. However, if you do your reading and exercise some respect and restraint, you just might. Here’s three excellent places to start, which range from “trip guide” (The Psychedelic Experience) to “general education on consciousness expansion” (Prometheus Rising) to “how to integrate psychedelic experiences into your day-to-day life without becoming a total space case” (The Bhagavad Gita).</p>
+            </div>
+            <div class="grid-item recGridItem recGridIntroImage"></div>
+            <div class="grid-item recGridSpacingItem" id="recGridSpacingItem2"></div>
+            <div class="grid-item recGridSpacingItem" id="recGridSpacingItem3"></div>
+
+            <!-- Book Number 1 -->
+            <div class="grid-item recGridItem recGridBookTitle1Line">
+              <h2 class="recGridBookRankText">1</h2>
+              <div class="recGridSeperatingLine"></div>
+              <h2 class="recGridBookTitleText">The Doors of Perception</h2>
+              <h2 class="recGridBookAuthorText">Aldous Huxley</h2>
+            </div>
+            <div class="grid-item recGridSpacingItem" id="recGridSpacingItem4"></div>
+            <div class="grid-item recGridItem recGridBookDesc">
+              <p>Huxley's account of his experiments with mescaline in the 1950s make psychedelic use sound like a perfectly reasonable and admirable pursuit which would bring credit to any middle class gentleman. Huxley never wrote a dull sentence in his life and this is certainly one of his best works. If its influence of the likes of Timothy Leary or Jim Morrison is considered, then it could easily be his most culturally important book.</p>
+            </div>
+            <div class="grid-item recGridItem recGridBookItem" id="recBook1"></div>
+            <div class="grid-item recGridSpacingItem" id="recGridSpacingItem9"></div>
+            <!-- Book Number 2 -->
+
+            <div class="grid-item recGridItem recGridBookTitle1Line">
+              <h2 class="recGridBookRankText">2</h2>
+              <div class="recGridSeperatingLine"></div>
+              <h2 class="recGridBookTitleText">The Great Shark Hunt</h2>
+              <h2 class="recGridBookAuthorText">Hunter S Thompson</h2>
+            </div>
+            <div class="grid-item recGridSpacingItem" id="recGridSpacingItem8"></div>
+            <div class="grid-item recGridItem recGridBookItem" id="recBook2"></div>
+            <div class="grid-item recGridItem recGridBookDesc">
+              <p>Fear and Loathing in Las Vegas is usually considered Thompson's best work, but I much prefer The Great Shark Hunt. It's a huge book, a collection of the best of his journalism from the 60s and 70s, and it shows that Thompson had a far greater range than his later reputation suggests. His essay about Hemingway's death, in which he tried to understand why such a once-vibrant man ended up blowing his brains out in small town America, is particularly poignant following Thompson's suicide.</p>
+            </div>
+
+            <div class="grid-item recGridSpacingItem" id="recGridSpacingItem5"></div>
+            <!-- Book Number 3 -->
+            <div class="grid-item recGridSpacingItem" id="recGridSpacingItem8"></div>
+
+            <div class="grid-item recGridItem recGridBookTitle1Line">
+              <h2 class="recGridBookRankText">3</h2>
+              <div class="recGridSeperatingLine"></div>
+              <h2 class="recGridBookTitleText">The Electric Kool-aid Acid Test</h2>
+              <h2 class="recGridBookAuthorText">Tom Wolfe</h2>
+            </div>
+            <div class="grid-item recGridItem recGridBookItem" id="recBook3"></div>
+            <div class="grid-item recGridItem recGridBookDesc">
+              <p>This is Wolfe's account of life with Ken Kesey, the Merry Pranksters and the birth of the American west coast psychedelic movement. Wolfe knew that a detached, even-handed journalistic approach could never really explain what was happening, so he gave his book the same psychedelic viewpoint as his characters. The result is a wonderful piece of writing. For those of us who weren't born in the 60s, this is probably the closest we can get to experiencing it.</p>
+            </div>
+            <div class="grid-item recGridSpacingItem" id="recGridSpacingItem6"></div>
+
+            <!-- Book Number 4 -->
+
+            <div class="grid-item recGridItem recGridBookTitle1Line">
+              <h2 class="recGridBookRankText">4</h2>
+              <div class="recGridSeperatingLine"></div>
+              <h2 class="recGridBookTitleText">High Priest</h2>
+              <h2 class="recGridBookAuthorText">Timothy Leary</h2>
+            </div>
+            <div class="grid-item recGridSpacingItem" id="recGridSpacingItem8"></div>
+            <div class="grid-item recGridItem recGridBookItem" id="recBook4"></div>
+            <div class="grid-item recGridItem recGridBookDesc">
+              <p>Leary was a prolific writer, producing over 30 books and hundreds of essays and papers. I've chosen his autobiographical High Priest (1968) for this list as I think it is one of his most accomplished pieces of writing. It captures both the drug experience and the sense of discovery so well; the moment a scientist realises that the implications of t heir work are so huge that their life will never be the same again.</p>
+            </div>
+            <div class="grid-item recGridSpacingItem" id="recGridSpacingItem6"></div>
+
+            <!-- Book Number 5 -->
+            <div class="grid-item recGridSpacingItem" id="recGridSpacingItem8"></div>
+
+            <div class="grid-item recGridItem recGridBookTitle1Line">
+              <h2 class="recGridBookRankText">5</h2>
+              <div class="recGridSeperatingLine"></div>
+              <h2 class="recGridBookTitleText">The Long Trip</h2>
+              <h2 class="recGridBookAuthorText">Paul Devereux</h2>
+            </div>
+            <div class="grid-item recGridItem recGridBookItem" id="recBook5"></div>
+            <div class="grid-item recGridItem recGridBookDesc">
+              <p>Devereux's impressive and thorough trawl through prehistory will be an eye-opener for anyone who thought drug use was a modern phenomenon. Devereux demonstrates that this point in history is a strange quirk in the human story, a rare time where we don't have a structure for incorporating psychedelic use into our society. If nothing else, it will make you view your ancestors in a different light!</p>
+            </div>
+            <div class="grid-item recGridSpacingItem" id="recGridSpacingItem6"></div>
+
+            <!-- Book Number 6 -->
+
+            <div class="grid-item recGridItem recGridBookTitle1Line">
+              <h2 class="recGridBookRankText">6</h2>
+              <div class="recGridSeperatingLine"></div>
+              <h2 class="recGridBookTitleText">Sisters of the Extreme</h2>
+              <h2 class="recGridBookAuthorText">Aldous Huxley</h2>
+            </div>
+            <div class="grid-item recGridSpacingItem" id="recGridSpacingItem8"></div>
+            <div class="grid-item recGridItem recGridBookItem" id="recBook6"></div>
+            <div class="grid-item recGridItem recGridBookDesc">
+              <p>Huxley's account of his experiments with mescaline in the 1950s make psychedelic use sound like a perfectly reasonable and admirable pursuit which would bring credit to any middle class gentleman. Huxley never wrote a dull sentence in his life and this is certainly one of his best works. If its influence of the likes of Timothy Leary or Jim Morrison is considered, then it could easily be his most culturally important book.</p>
+            </div>
+            <div class="grid-item recGridSpacingItem" id="recGridSpacingItem6"></div>
+
+            <!-- Book Number 7 -->
+            <div class="grid-item recGridSpacingItem" id="recGridSpacingItem8"></div>
+
+            <div class="grid-item recGridItem recGridBookTitle1Line">
+              <h2 class="recGridBookRankText">7</h2>
+              <div class="recGridSeperatingLine"></div>
+              <h2 class="recGridBookTitleText">DMT: The Spirit Molecule</h2>
+              <h2 class="recGridBookAuthorText">Rick Strassman, MD</h2>
+            </div>
+            <div class="grid-item recGridSpacingItem" id="recGridSpacingItem7"></div>
+
+            <div class="grid-item recGridItem recGridBookItem" id="recBook7"></div>
+            <div class="grid-item recGridItem recGridBookDesc">
+              <p>The medical profession has written little about psychedelics since Timothy Leary, which makes this book all the more valuable. DMT, a natural chemical produced by the human brain, is a hallucinogen so powerful that it makes LSD look like lager shandy. DMT throws up some very big questions about the workings of the brain, consciousness and about the world at large, and Strassman does not shy from these. For those who think that one day science will have all the answers, this book shows just how clueless we still are.</p>
+            </div>
+            <div class="grid-item recGridSpacingItem" id="recGridSpacingItem6"></div>
+
+            <!-- Book Number 8 -->
+
+            <div class="grid-item recGridItem recGridBookTitle1Line">
+              <h2 class="recGridBookRankText">8</h2>
+              <div class="recGridSeperatingLine"></div>
+              <h2 class="recGridBookTitleText">Cosmic Trigger</h2>
+              <h2 class="recGridBookAuthorText">Robert Anton Wilson</h2>
+            </div>
+            <div class="grid-item recGridSpacingItem" id="recGridSpacingItem8"></div>
+            <div class="grid-item recGridItem recGridBookItem" id="recBook8"></div>
+            <div class="grid-item recGridItem recGridBookDesc">
+              <p>The usual medical warning about psychedelic use is that it is dangerous for anyone with latent or undiagnosed neurotic or schizophrenic disorders. Perhaps a more important warning would be that psychedelic use can trigger an onslaught of utterly weird synchronicities which leave the user in a world that has seemingly gone totally crazy, while they still feel perfectly sane. Robert Anton Wilson describes this situation better than anyone, and this sanity-bashing account of his personal journey through what he calls 'Chapel Perilous' is one of his best works.</p>
+            </div>
+            <div class="grid-item recGridSpacingItem" id="recGridSpacingItem6"></div>
+
+
+            <!-- Book Number 9 -->
+            <div class="grid-item recGridSpacingItem" id="recGridSpacingItem10"></div>
+
+            <div class="grid-item recGridItem recGridBookTitle1Line">
+              <h2 class="recGridBookRankText">9</h2>
+              <div class="recGridSeperatingLine"></div>
+              <h2 class="recGridBookTitleText">Bill Hicks: Agent of Evolution</h2>
+              <h2 class="recGridBookAuthorText">Kevin Booth and Michael Bertin</h2>
+            </div>
+            <div class="grid-item recGridItem recGridBookItem" id="recBook9"></div>
+            <div class="grid-item recGridItem recGridBookDesc">
+              <p>Psychedelics are often thought to have faded in influence after the mid 70s, but this is not the case. Instead, they became more subtly integrated into people's lives, to the degree that they didn't overshadow an individual's other interests or achievements. Bill Hicks is a good example. Although he frequently talked about his psychedelic use on stage he is not generally labelled as just a 'drugs comic', and I suspect that my inclusion of this book in this list will surprise a few people.</p>
+            </div>
+            <div class="grid-item recGridSpacingItem" id="recGridSpacingItem6"></div>
+
+
+            <!-- Book Number 10 -->
+
+            <div class="grid-item recGridItem recGridBookTitle1Line">
+              <h2 class="recGridBookRankText">10</h2>
+              <div class="recGridSeperatingLine"></div>
+              <h2 class="recGridBookTitleText">What the Dormouse Said</h2>
+              <h2 class="recGridBookAuthorText">John Markoff</h2>
+            </div>
+            <div class="grid-item recGridSpacingItem" id="recGridSpacingItem8"></div>
+
+            <div class="grid-item recGridItem recGridBookItem" id="recBook10"></div>
+            <div class="grid-item recGridItem recGridBookDesc">
+              <p>This is significant because it is one of the first books to look at the legacy that the psychedelic movement of the 60s left behind. Many people will be surprised by the debt the idea of a 'personal computer' owes to psychedelics, the significance of the geographical location of Silicon Valley on the San Franciscan peninsula, or why Steve Jobs would say that taking LSD was one of the "two or three most important things" he has ever done. An impressive account of recent history.</p>
+            </div>
+            <div class="grid-item recGridSpacingItem" id="recGridSpacingItem6"></div>
+
+
+            <!-- Book Number 11 -->
+            <div class="grid-item recGridSpacingItem" id="recGridSpacingItem8"></div>
+
+            <div class="grid-item recGridItem recGridBookTitle1Line">
+              <h2 class="recGridBookRankText">11</h2>
+              <div class="recGridSeperatingLine"></div>
+              <h2 class="recGridBookTitleText">The Road of Excess</h2>
+              <h2 class="recGridBookAuthorText">Brian Barritt</h2>
+            </div>
+            <div class="grid-item recGridItem recGridBookItem" id="recBook11"></div>
+            <div class="grid-item recGridItem recGridBookDesc">
+              <p>A psychedelic top 10, of course, goes up to 11, which allows me to include Barritt's autobiography. One of Timothy Leary's lovers recently told me that she thought this book had the greatest descriptions of acid trips ever written, and she may well be right. This is a piece of literature that has clearly never been within a hundred yards of a copy editor, and it is all the better for it. Words just spill forth with no interest in grammar, coherence or where the narrative is going, but it possesses such an innate wit and swagger that it is a complete joy from start to finish. Psychedelia in its purest form, studded with flashes of brilliance.</p>
+            </div>
+            <div class="grid-item recGridSpacingItem" id="recGridSpacingItem6"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script type="text/javascript">
+      $(window).bind('mousewheel', function(event) {
+        if (event.originalEvent.wheelDelta >= 0) {
+            $('.pageNav').removeClass('pageNavScrolledDown');
+            $('.topbar').removeClass('topbarScrolledDown');
+            $('.topbarIconSpace').removeClass('topbarIconSpaceScrolledDown');
+            $('.pageTitle').removeClass('pageTitleScrolledDown');
+        }
+        else {
+            $('.pageNav').addClass('pageNavScrolledDown');
+            $('.topbar').addClass('topbarScrolledDown');
+            $('.topbarIconSpace').addClass('topbarIconSpaceScrolledDown');
+            $('.pageTitle').addClass('pageTitleScrolledDown');
+        }
+      });
+    </script>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

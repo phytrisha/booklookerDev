@@ -5,12 +5,31 @@
 
 body { 
   font-family: Mark Pro, Helvetica, sans-serif;
+  font-size: 12px;
   margin: 0 0 0 0;
+  padding-top: 200px;
 }
 
 a {
   color: #000;
   text-decoration: none; /* no underline */
+}
+
+p {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 200;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  color: #232a41; 
+}
+
+h1 {
+  color: #232a41;
+}
+
+h2 {
+  color: #232a41;
 }
 
 /* ---- topbar ---- */
@@ -33,39 +52,51 @@ a {
 
 .pageNav {
   width: 100%;
-  height: 120px;
+  height: 100px;
   background-color: #fff;
   -webkit-transition: 0.5s;
+  position: relative;
   /*opacity: 1;*/
 }
 
+@media (max-width: 764px) {
+  .pageNav {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .subNav {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 .pageNavScrolledDown {
-  height: 60px;
+  height: 50px;
   /*opacity: 0;*/
   /*display: none;*/
 }
 
 .pageTitle {
-  margin: 0 auto 0 20px;
-  text-align: left;
-  position: absolute;
-  top: 44px;
-  font-size: 30px;
-  font-weight: 600;
-  color: #474747;
+  margin: 0 auto 0 0;
+  position: relative;
+  top: 41px;
+  float: left;
+  font-size: 24px;
+  font-weight: 500;
+  color: #232a41;
   -webkit-transition: 0.5s;
 }
 
 .pageTitleScrolledDown {
-  top: 16px;
+  top: 12px;
   font-size: 20px;
 }
 
 .topbarIconSpace {
   float: right;
-  width: 158px;
+  width: 128px;
   height: 36px;
-  margin: 36px 0 38px 0;
+  margin: 32px 0 32px 0;
   -webkit-transition: 0.5s;
 }
 
@@ -81,16 +112,24 @@ a {
   -webkit-transition: 0.1s;
 }
 
-.topbarIcon.scrolled-down { display: none;}
+.topbarIcon.scrolled-down { 
+  display: none;
+}
 
-.topbarIcon:hover {opacity: 1.0;}
+.topbarIcon:hover {
+  opacity: 1.0;
+}
 
-#search {background-image: url(../images/icons/topbarSearch.svg);}
+#search {
+  background-image: url(../images/icons/topbarSearch.svg);
+}
 #sell {
   margin: 0 10px 0 10px;
   background-image: url(../images/icons/topbarSell.svg);
 }
-#user {background-image: url(../images/icons/topbarUser.svg);}
+#user {
+  background-image: url(../images/icons/topbarUser.svg);
+}
 
 /* ---- sub Navigation ---- */
 
@@ -99,9 +138,10 @@ a {
   height: 60px;
   position: relative;
   background-color: #fff;
-  border-style: solid;
+  border-top-style: solid;
+  border-bottom-style: solid;
   border-width: 1px;
-  border-color: #f0f1ea;
+  border-color: #d3d4d9;
 }
 
 .navBullet {
@@ -112,6 +152,7 @@ a {
   opacity: 0.5;
   color: #232a41;
   -webkit-transition: all 0.25s ease-in-out 0s;
+  font-size: 16px;
 }
 
 .navBullet:hover {
@@ -144,18 +185,29 @@ a {
   opacity: 0.5;
 }
 
-/* ---- make topbar responsive ---- */
-@media (min-width: 372px) {.topbar { width: 372px;}}
-@media (min-width: 568px) {.topbar { width: 568px;}}
-@media (min-width: 764px) {.topbar { width: 764px;}}
-@media (min-width: 960px) {.topbar { width: 960px;}}
-@media (min-width: 1157px) {.topbar { width: 1156px;}}
+.navBulletFirst {
+  margin-left: 0px;
+}
 
-@media (min-width: 372px) {.content { width: 372px;}}
-@media (min-width: 568px) {.content { width: 568px;}}
-@media (min-width: 764px) {.content { width: 764px;}}
-@media (min-width: 960px) {.content { width: 960px;}}
-@media (min-width: 1157px) {.content { width: 1156px;}}
+/* ---- make topbar responsive ---- */
+
+@media (min-width: 372px) {
+  .content { width: 372px;}
+}
+@media (min-width: 568px) {
+  .content { width: 568px;}
+}
+@media (min-width: 764px) {
+  .content { width: 764px;}
+}
+@media (min-width: 960px) {
+  .content { width: 960px;}
+  .recommendContent { width: 766px;}
+}
+@media (min-width: 1157px) {
+  .content { width: 1156px;}
+  .recommendContent { width: 766px;}
+}
 
 .content {
   /*width: auto;*/
@@ -173,14 +225,17 @@ a {
 
 .section {
   position: relative;
-  top: 220px;
-  padding-bottom: 150px;
+  padding-bottom: 50px;
 }
 
 .sectionTitle {
   position: relative;
   text-align: center;
   margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #f75f0b;
+  letter-spacing: 0.5px;
 }
 
 #bestsellerSection {
@@ -217,15 +272,19 @@ a {
   width: 176px;
   height: 220px;
   float: left;
-  background: #bbb;
   /*border: 2px solid #333;*/
   border-color: rgb(50, 50, 50);
   margin-bottom: 19px;
 }
 
-.grid-item:hover { background-color: #232a41}
+.grid-item--genre { 
+  height: 176px;
+  background-color: #232a41;
+}
 
-.grid-item--genre { height: 176px;}
+.grid-item--book:hover {
+  background-color: #232a41;
+}
 
 .grid-item--height2 { height: 200px; }
 .grid-item--height3 { height: 260px; }
@@ -238,6 +297,7 @@ a {
   width: 156px;
   height: 150px;
   text-align: center;
+  position: absolute;
 }
 
 .genreIcon {
@@ -245,7 +305,6 @@ a {
   height: 110px;
   float: left;
   margin: 15px 23px 0px 23px;
-  background-color: #000;
 }
 
 .genreText {
@@ -253,12 +312,128 @@ a {
   margin-top: 9px;
   font-weight: 600;
   font-size: 16px;
+  color: #fff;
 }
 
 .book {
   width: 100%;
   height: 100%;
   overflow: hidden;
+}
+
+.genreBackgroundImage {
+  width: 100%;
+  height: 100%;
+  float: left;
+  opacity: 0.4;
+}
+
+#genreBgScience {
+  background-image: url(../images/genreImages/01Science.jpg);
+  background-size: 176px 176px;
+  background-repeat: no-repeat;
+}
+#genreBgLaw {
+  background-image: url(../images/genreImages/02Law.jpg);
+  background-size: 176px 176px;
+  background-repeat: no-repeat;
+}
+#genreBgEconomics {
+  background-image: url(../images/genreImages/03Economics.jpg);
+  background-size: 176px 176px;
+  background-repeat: no-repeat;
+}
+#genreBgHumanities {
+  background-image: url(../images/genreImages/04Humanities.jpg);
+  background-size: 176px 176px;
+  background-repeat: no-repeat;
+}
+#genreBgArtDesign {
+  background-image: url(../images/genreImages/05ArtDesign.jpg);
+  background-size: 176px 176px;
+  background-repeat: no-repeat;
+}
+#genreBgMusic {
+  background-image: url(../images/genreImages/06Music.jpg);
+  background-size: 176px 176px;
+  background-repeat: no-repeat;
+}
+#genreBgHobby {
+  background-image: url(../images/genreImages/07Hobby.jpg);
+  background-size: 176px 176px;
+  background-repeat: no-repeat;
+}
+#genreBgSports {
+  background-image: url(../images/genreImages/08Sports.jpg);
+  background-size: 176px 176px;
+  background-repeat: no-repeat;
+}
+#genreBgCooking {
+  background-image: url(../images/genreImages/09Cooking.jpg);
+  background-size: 176px 176px;
+  background-repeat: no-repeat;
+}
+#genreBgPolitics {
+  background-image: url(../images/genreImages/10Politics.jpg);
+  background-size: 176px 176px;
+  background-repeat: no-repeat;
+}
+#genreBgTechnology {
+  background-image: url(../images/genreImages/11Technology.jpg);
+  background-size: 176px 176px;
+  background-repeat: no-repeat;
+}
+#genreBgLanguages {
+  background-image: url(../images/genreImages/12Languages.jpg);
+  background-size: 176px 176px;
+  background-repeat: no-repeat;
+}
+#genreBgNovels {
+  background-image: url(../images/genreImages/13Novels.jpg);
+  background-size: 176px 176px;
+  background-repeat: no-repeat;
+}
+#genreBgDrama {
+  background-image: url(../images/genreImages/14Drama.jpg);
+  background-size: 176px 176px;
+  background-repeat: no-repeat;
+}
+#genreBgThrillers {
+  background-image: url(../images/genreImages/15Thrillers.jpg);
+  background-size: 176px 176px;
+  background-repeat: no-repeat;
+}
+#genreBgCrime {
+  background-image: url(../images/genreImages/16Crime.jpg);
+  background-size: 176px 176px;
+  background-repeat: no-repeat;
+}
+#genreBgHistory {
+  background-image: url(../images/genreImages/17History.jpg);
+  background-size: 176px 176px;
+  background-repeat: no-repeat;
+}
+#genreBgHumor {
+  background-image: url(../images/genreImages/18Humor.jpg);
+  background-size: 176px 176px;
+  background-repeat: no-repeat;
+}
+#genreBgRomance {
+  background-image: url(../images/genreImages/19Romance.jpg);
+  background-size: 176px 176px;
+  background-repeat: no-repeat;
+}
+#genreBgOthers {
+  background-image: url(../images/genreImages/20Others.jpg);
+  background-size: 176px 176px;
+  background-repeat: no-repeat;
+}
+
+
+#genreIconScience {
+  background-image: url(../images/genreIcons/01science.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #book1 {height: 222px;}
@@ -364,6 +539,349 @@ a {
 .bookBuyIcon:hover {
   opacity: 1.0
 }
+
+/* ---- recommendations ---- */
+
+.rec1Column {width: 176px;}
+.rec2Column {width: 372px;}
+.rec3Column {width: 568px;}
+.rec4Column {width: 764px;}
+.rec5Column {width: 960px;}
+.rec6Column {width: 1156px;}
+
+#recTop20PsyBooks {
+  height: 400px;
+  background-image: url(../images/recImages/recTop20PsyBooks.png);
+  opacity: 0.75;
+  -webkit-transition: 0.25s;
+}
+
+#recTop20PsyBooks:hover {
+  opacity: 1.0;
+}
+
+#recBeatGeneration {
+  height: 400px;
+  background-color: #232a41;
+}
+
+#recQuote1 {
+  height: 176px;
+  background-color: #232a41;
+}
+
+#recQuote2 {
+  height: 176px;
+  background-color: #f75f0b;
+}
+
+#recOnTheRoad {
+  height: 283px;
+  background-image: url(../images/recImages/recOnTheRoad.png);
+}
+
+#recYouTubeReview {
+  height: 398px;
+}
+
+#recNoirFiction {
+  height: 347px;
+  background-color: #232a41;
+}
+
+#recJunkyBook {
+  height: 287px;
+  background-image: url(../images/recImages/recJunkyBook.png);
+}
+
+#recTheKillerBook {
+  height: 274px;
+  background-image: url(../images/recImages/recTheKillerBook.png);
+}
+
+#recQuote3 {
+  height: 176px;
+  background-color: #f75f0b;
+}
+
+.blogPostTitle {
+  text-align: center;
+  top: 50%;
+  margin-top: -33px;
+  position: relative;
+  vertical-align: middle;
+  color: #fff;
+}
+
+.recTextPost {
+  color: #fff;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+.recQuotePost {
+  color: #fff;
+  margin-left: 14px;
+  margin-top: 11px;
+  margin-right: 14px;
+}
+
+.recTextPostTitle {
+  color: #fff;
+  margin-top: 11px;
+  margin-left: 14px;
+}
+
+/* ---- recommendations detail ---- */
+
+.recommendDetailTitle {
+  text-align: center;
+  font-weight: 700;
+}
+
+.recommendContent {
+  margin: 0 auto 0 auto;
+  padding-top: 40px;
+  position: relative;
+}
+
+.recGridItem {
+  width: 372px;
+  margin-bottom: 0px;
+}
+
+.recGridIntroImage {
+  height: 660px;
+  background-image: url(../images/recDetailImages/recIntroImage.png);
+}
+
+.recGridSpacingItem {
+  margin-bottom: 0px;
+}
+
+#recGridSpacingItem1 {
+  height: 200px;
+  width: 372px;
+}
+
+#recGridSpacingItem2 {
+  height: 76px;
+  width: 764px;
+}
+
+#recGridSpacingItem3 {
+  height: 626px;
+  width: 176px;
+}
+
+#recGridSpacingItem4 {
+  height: 90px;
+  width: 176px;
+}
+
+#recGridSpacingItem5 {
+  height: 160px;
+  width: 372px;
+}
+#recGridSpacingItem6 {
+  height: 80px;
+  width: 372px;
+}
+
+#recGridSpacingItem7 {
+  height: 80px;
+  width: 176px;
+}
+
+#recGridSpacingItem8 {
+  height: 0px;
+  width: 0px;
+}
+
+#recGridSpacingItem9 {
+  height: 0px;
+  width: 0px;
+}
+
+#recGridSpacingItem10 {
+  height: 0px;
+  width: 0px;
+}
+
+.recGridIntroText {
+  height: 520px;
+}
+
+.recGridBookTitle1Line {
+  width: 372px;
+  height: 90px;
+}
+
+.recGridBookRankText {
+  margin-top: 0px;
+  -webkit-margin-before: 0px;
+  line-height: 0.7;
+  font-size: 42px;
+}
+
+.recGridSeperatingLine {
+  width: 196px;
+  height: 1px;
+  background-color: #232a41;
+  top: 1px;
+  position: relative;
+}
+
+.recGridBookTitleText {
+  font-size: 24px;
+  margin-top: 7px;
+  margin-bottom: 0px;
+}
+
+.recGridBookAuthorText {
+  font-size: 14px;
+  margin-top: 1px;
+  margin-bottom: 0px;
+}
+
+.recGridBookDesc {
+  width: 176px;
+  height: 300px;
+}
+
+.recGridBookItem {
+  width: 176px;
+  margin-top: 5px;
+}
+
+#recBook1 {
+  width: 372px;
+  height: 626px;
+  margin-top: 0px;
+  background-image: url(../images/recDetailImages/recRank1.png);
+}
+
+#recBook2 {
+  height: 257px;
+  background-image: url(../images/recDetailImages/recRank2.png);
+}
+
+#recBook3 {
+  height: 281px;
+  background-image: url(../images/recDetailImages/recRank3.png);
+}
+
+#recBook4 {
+  height: 269px;
+  background-image: url(../images/recDetailImages/recRank4.png);
+}
+
+#recBook5 {
+  height: 273px;
+  background-image: url(../images/recDetailImages/recRank5.png);
+}
+
+#recBook6 {
+  height: 220px;
+  background-image: url(../images/recDetailImages/recRank6.png);
+}
+
+#recBook7 {
+  height: 264px;
+  background-image: url(../images/recDetailImages/recRank7.png);
+}
+
+#recBook8 {
+  height: 323px;
+  background-image: url(../images/recDetailImages/recRank8.png);
+}
+
+#recBook9 {
+  height: 271px;
+  background-image: url(../images/recDetailImages/recRank9.png);
+}
+
+#recBook10 {
+  height: 270px;
+  background-image: url(../images/recDetailImages/recRank10.png);
+}
+
+#recBook11 {
+  height: 251px;
+  background-image: url(../images/recDetailImages/recRank11.png);
+}
+
+@media (max-width: 764px) {
+  #recGridSpacingItem1 {
+    height: 0px;
+  }
+  #recGridSpacingItem2 {
+    width: 568px;
+  }
+  #recGridSpacingItem3 {
+    height: 403px;
+  }
+  #recGridSpacingItem4 {
+    height: 1px;
+  }
+  #recGridSpacingItem5 {
+    height: 80px;
+  }
+  #recGridSpacingItem7 {
+    height: 0px;
+  }
+  #recGridSpacingItem8 {
+    width: 176px;
+    height: 500px;
+  }
+  #recGridSpacingItem9 {
+    width: 568px;
+    height: 70px;
+  }
+  #recGridSpacingItem10 {
+    height: 403px;
+    width: 176px;
+  }
+  .recGridIntroImage {
+    width: 176px;
+    height: 482px;
+  }
+  #recBook1 {
+    width: 176px;
+    height: 313px;
+    background-size: 176px 313px;
+  }
+}
+
+@media (max-width: 568px) {
+  .recGridIntroImage {
+    width: 0px;
+    height: 0px;
+  }
+  #recGridSpacingItem2 {
+    height: 0px;
+  }
+  #recGridSpacingItem3 {
+    height: 0px;
+  }
+  #recGridSpacingItem8 {
+    height: 0px;
+  }
+  #recGridSpacingItem10 {
+    height: 0px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

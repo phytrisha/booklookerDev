@@ -10,7 +10,9 @@ dark-blue: #232a41
 
 body { 
   font-family: Mark Pro, Helvetica, sans-serif;
+  font-size: 12px;
   margin: 0 0 0 0;
+  padding-top: 200px;
 }
 
 a {
@@ -51,85 +53,55 @@ h2 {
   height: 60px;
 }
 
-.buyButton {
-  width: 135px;
-  height: 36px;
-  top: 260px;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  text-align: center;
-  position: relative;
-  border-radius: 4px;
-  border: 2px solid #f75f0b;
-  -webkit-transition: 0.1s;
-  opacity: 0.8;
-}
-
-.buyButton:hover {
-  background-color: #f75f0b;
-}
-
-.buyButton:hover > .priceTag {
-  color: #fff;
-}
-
-.buyButton:active {
-  border: 2px solid #cc5b1f;
-  background-color: #cc5b1f;
-}
-
-.priceTag {
-  margin-top: 7px;
-  font-weight: 600;
-  color: #f75f0b;
-  -webkit-transition: 0.1s;
-}
-
-.bottomSpace {
-  width: 100%;
-  height: 300px;
-  top: 400px;
-  position: relative;
-}
-
 /* ---- main Navigation ---- */
 
 .pageNav {
   width: 100%;
-  height: 120px;
+  height: 100px;
   background-color: #fff;
   -webkit-transition: 0.5s;
+  position: relative;
   /*opacity: 1;*/
 }
 
+@media (max-width: 764px) {
+  .pageNav {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .subNav {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 .pageNavScrolledDown {
-  height: 60px;
+  height: 50px;
   /*opacity: 0;*/
   /*display: none;*/
 }
 
 .pageTitle {
-  margin: 0 auto 0 20px;
+  margin: 0 auto 0 0;
   text-align: left;
   position: absolute;
-  top: 44px;
-  font-size: 30px;
-  font-weight: 600;
+  top: 41px;
+  font-size: 24px;
+  font-weight: 500;
   color: #232a41;
   -webkit-transition: 0.5s;
 }
 
 .pageTitleScrolledDown {
-  top: 16px;
+  top: 12px;
   font-size: 20px;
 }
 
 .topbarIconSpace {
   float: right;
-  width: 158px;
+  width: 128px;
   height: 36px;
-  margin: 36px 0 38px 0;
+  margin: 32px 0 32px 0;
   -webkit-transition: 0.5s;
 }
 
@@ -145,16 +117,24 @@ h2 {
   -webkit-transition: 0.1s;
 }
 
-.topbarIcon.scrolled-down { display: none;}
+.topbarIcon.scrolled-down { 
+  display: none;
+}
 
-.topbarIcon:hover {opacity: 1.0;}
+.topbarIcon:hover {
+  opacity: 1.0;
+}
 
-#search {background-image: url(../images/icons/topbarSearch.svg);}
+#search {
+  background-image: url(../images/icons/topbarSearch.svg);
+}
 #sell {
   margin: 0 10px 0 10px;
   background-image: url(../images/icons/topbarSell.svg);
 }
-#user {background-image: url(../images/icons/topbarUser.svg);}
+#user {
+  background-image: url(../images/icons/topbarUser.svg);
+}
 
 /* ---- sub Navigation ---- */
 
@@ -163,9 +143,10 @@ h2 {
   height: 60px;
   position: relative;
   background-color: #fff;
-  border-style: solid;
+  border-top-style: solid;
+  border-bottom-style: solid;
   border-width: 1px;
-  border-color: #f0f1ea;
+  border-color: #d3d4d9;
 }
 
 .navBullet {
@@ -176,6 +157,7 @@ h2 {
   opacity: 0.5;
   color: #232a41;
   -webkit-transition: all 0.25s ease-in-out 0s;
+  font-size: 16px;
 }
 
 .navBullet:hover {
@@ -189,7 +171,7 @@ h2 {
   height: 1px;
   bottom: -4px;
   left: 0;
-  background-color: #f75f0b;
+  background-color: #c89969;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -webkit-transition: all 0.25s ease-in-out 0s;
@@ -208,18 +190,52 @@ h2 {
   opacity: 0.5;
 }
 
+.navBulletFirst {
+  margin-left: 0px;
+}
+
+/* ---- make topbar responsive ---- */
+
+@media (min-width: 372px) {
+  .content { width: 372px;}
+}
+@media (min-width: 568px) {
+  .content { width: 568px;}
+}
+@media (min-width: 764px) {
+  .content { width: 764px;}
+}
+@media (min-width: 960px) {
+  .content { width: 960px;}
+}
+@media (min-width: 1157px) {
+  .content { width: 1156px;}
+}
+
+.content {
+  /*width: auto;*/
+  max-width: 1156px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.title {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
 /* ---- content below Slider ---- */
 
 .detailContent {
   margin: 0 auto 0 auto;
-  top: 220px;
+  padding-top: 40px;
   position: relative;
 }
 
 .description {
   height: 240px;
-  top: 40px;
   position: relative;
+  margin-bottom: 40px;
 }
 
 .descriptionLeft {
@@ -240,7 +256,7 @@ h2 {
   width: 100%;
   height: 60px;
   position: relative;
-  top: 60px;
+  margin-bottom: 40px;
 }
 
 .factsColumn {
@@ -295,7 +311,7 @@ h2 {
 
 .factContentText {
   line-height: 20px;
-  font-weight: 400;
+  font-weight: 500;
   color: #232a41;
 }
 
@@ -328,6 +344,7 @@ h2 {
 .ratingLabel {
   text-align: center;
   margin-top: 9px;
+  font-weight: 500;
 }
 
 /* ---- subBar for Book ---- */
@@ -337,6 +354,7 @@ h2 {
   height: 60px;
   position: relative;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .bookTitle {
@@ -397,28 +415,28 @@ h2 {
 
 @media (min-width: 372px) {
   .topbar { width: 372px;}
-  .allContent { width: 372px;}
+  .content { width: 372px;}
 }
 @media (min-width: 568px) {
   .topbar { width: 568px;}
-  .allContent { width: 568px;}
+  .content { width: 568px;}
 }
 @media (min-width: 764px) {
   .topbar { width: 764px;}
-  .allContent { width: 764px;}
+  .content { width: 764px;}
 }
 @media (min-width: 960px) {
   .topbar { width: 960px;}
-  .allContent { width: 960px;}
+  .content { width: 960px;}
   .detailContent { width: 766px;}
 }
 @media (min-width: 1157px) {
   .topbar { width: 1156px;}
-  .allContent { width: 1156px;}
+  .content { width: 1156px;}
   .detailContent { width: 766px;}
 }
 
-.allContent {
+.content {
   /*width: auto;*/
   max-width: 1156px;
   position: relative;
@@ -457,7 +475,6 @@ h2 {
 #container{
   margin:0 auto;
   width: 100%;
-  top: 200px;
   position: relative;
 }
 
@@ -520,10 +537,58 @@ p.bjqs-caption{
   opacity: 1.0;
 }
 
+.sellerDetails {
+  width: 100%;
+  position: relative;
+}
+
+.sellerCell {
+  width: 100%;
+  position: relative;
+  height: 60px;
+  padding-top: 10px;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #d3d4d9;
+}
+
+.sellerCellLastChild {
+  border-bottom-style: none;
+}
 
 
+.buyButton {
+  width: 135px;
+  height: 36px;
+  position: relative;
+  border-radius: 4px;
+  border: 2px solid #f75f0b;
+  -webkit-transition: 0.1s;
+  text-align: center;
+  float: right;
+  margin-top: 2px;
+}
 
+.buyButton:hover {
+  background-color: #f75f0b;
+}
 
+.buyButton:hover > .priceTag {
+  color: #fff;
+}
+
+.buyButton:active {
+  border: 2px solid #de4f02;
+  background-color: #de4f02;
+}
+
+.priceTag {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-top: 6px;
+  -webkit-transition: 0.1s;
+}
 
 
 

@@ -8,6 +8,7 @@
     <title>Booklooker</title>
     <link rel="stylesheet" href="../css/detailStyle.css">
     <link rel="stylesheet" href="../css/bjqs.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <!--<link rel="stylesheet" href="../css/demo.css">-->
     <script src='../js/jquery.min.js'></script>
     <script src='../js/masonry.pkgd.js'></script>
@@ -15,21 +16,26 @@
   </head>
 
   <body>
-    <div class="allContent">
-      <div class="topbar">
-        <div class="pageNav">
-          <a href="../index.html"><h1 class="pageTitle">booklooker</h1></a>  <div class="topbarIconSpace">
-            <div class="topbarIcon" id="search"></div>
-            <div class="topbarIcon" id="sell"></div>
-            <div class="topbarIcon" id="user"></div>
+    <div class="content">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="pageNav">
+            <a href="../index.html">
+              <div class="pageTitle">booklooker</div>
+            </a>
+            <div class="topbarIconSpace">
+              <div class="topbarIcon" id="search"></div>
+              <div class="topbarIcon" id="sell"></div>
+              <div class="topbarIcon" id="user"></div>
+            </div>
+          </div>
+          <div class="subNav">
+            <span class="navBullet navBulletFirst" id="bestsellerButton">Bestseller</span>
+            <span class="navBullet" id="recommendButton">Recomendations</span>
+            <span class="navBullet" id="categoriesButton">Categories</span>
           </div>
         </div>
-        <div class="subNav">
-          <span class="navBullet navBulletInactive" id="bestsellerButton">Bestseller</span>
-          <span class="navBullet navBulletInactive" id="recommendButton">Recommendations</span>
-          <span class="navBullet navBulletInactive" id="categoriesButton">Categories</span>
-        </div>
-      </div>
+      </nav>
 
       <div id="container">
         <div id="banner-slide">
@@ -79,7 +85,7 @@
         <div class="facts">
           <div class="factsColumn" id="factsColumn1">
             <div class="factLabel">
-              <p class="factLabelText">Publisher:</br>ISBN-10:</br>ISBN-13:</p>
+              <p class="factLabelText">Publisher</br>ISBN-10</br>ISBN-13</p>
             </div>
             <div class="factContent">
               <p class="factContentText">Aperture</br>1784081477</br>978-1784081478</p>
@@ -87,7 +93,7 @@
           </div>
           <div class="factsColumn" id="factsColumn2">
             <div class="factLabel">
-              <p class="factLabelText">Paperback:</br>Hardcover:</p>
+              <p class="factLabelText">Paperback</br>Hardcover</p>
             </div>
             <div class="factContent">
               <p class="factContentText">26 books available</br>0 books available</p>
@@ -105,11 +111,108 @@
           </div>
         </div>
 
-        <a href="http://google.de">
+        <div class="sellerDetails">
+          <div class="sellerCell">
+            <div class="factsColumn" id="factsColumn1">
+              <div class="factLabel">
+                <p class="factLabelText">Reseller</br>Condition</p>
+              </div>
+              <div class="factContent">
+                <p class="factContentText">used_books_de</br>Excellent</p>
+              </div>
+            </div>
+            <div class="factsColumn" id="factsColumn2">
+              <div class="factLabel">
+                <p class="factLabelText">Edition</br>Availability</p>
+              </div>
+              <div class="factContent">
+                <p class="factContentText">1st</br>3-5 days</p>
+              </div>
+            </div>
+            <div class="factsColumn" id="factsColumn3">
+              <div class="buyButton">
+                <p class="priceTag">€6,-</p>
+              </div>
+            </div>
+          </div>
+            
+          </div>
+          <div class="sellerCell">
+            <div class="factsColumn" id="factsColumn1">
+              <div class="factLabel">
+                <p class="factLabelText">Reseller</br>Condition</p>
+              </div>
+              <div class="factContent">
+                <p class="factContentText">used_books_de</br>Excellent</p>
+              </div>
+            </div>
+            <div class="factsColumn" id="factsColumn2">
+              <div class="factLabel">
+                <p class="factLabelText">Edition</br>Availability</p>
+              </div>
+              <div class="factContent">
+                <p class="factContentText">1st</br>3-5 days</p>
+              </div>
+            </div>
+            <div class="factsColumn" id="factsColumn3">
+              <div class="buyButton">
+                <p class="priceTag">€6,-</p>
+              </div>
+            </div>            
+          </div>
+          <div class="sellerCell">
+            <div class="factsColumn" id="factsColumn1">
+              <div class="factLabel">
+                <p class="factLabelText">Reseller</br>Condition</p>
+              </div>
+              <div class="factContent">
+                <p class="factContentText">used_books_de</br>Excellent</p>
+              </div>
+            </div>
+            <div class="factsColumn" id="factsColumn2">
+              <div class="factLabel">
+                <p class="factLabelText">Edition</br>Availability</p>
+              </div>
+              <div class="factContent">
+                <p class="factContentText">1st</br>3-5 days</p>
+              </div>
+            </div>
+            <div class="factsColumn" id="factsColumn3">
+              <div class="buyButton">
+                <p class="priceTag">€6,-</p>
+              </div>
+            </div>            
+          </div>
+          <div class="sellerCell sellerCellLastChild">
+            <div class="factsColumn" id="factsColumn1">
+              <div class="factLabel">
+                <p class="factLabelText">Reseller</br>Condition</p>
+              </div>
+              <div class="factContent">
+                <p class="factContentText">used_books_de</br>Excellent</p>
+              </div>
+            </div>
+            <div class="factsColumn" id="factsColumn2">
+              <div class="factLabel">
+                <p class="factLabelText">Edition</br>Availability</p>
+              </div>
+              <div class="factContent">
+                <p class="factContentText">1st</br>3-5 days</p>
+              </div>
+            </div>
+            <div class="factsColumn" id="factsColumn3">
+              <div class="buyButton">
+                <p class="priceTag">€6,-</p>
+              </div>
+            </div>            
+          </div>
+        </div>
+
+        <!--<a href="http://google.de">
           <div class="buyButton">
             <p class="priceTag">€6,-</p>
           </div>
-        </a>
+        </a>-->
 
         <div class="bottomSpace"></div>        
       </div>
