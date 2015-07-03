@@ -23,12 +23,20 @@
             <a href="index.html">
               <div class="pageTitle">booklooker</div>
             </a>
+            <div class="searchBar">
+              <ul class="input-list style-4 clearfix">
+                <li>
+                  <input type="text" placeholder="Search">
+                </li>
+              </ul>
+            </div>
             <div class="topbarIconSpace">
               <div class="topbarIcon" id="search"></div>
               <div class="topbarIcon" id="sell"></div>
               <div class="topbarIcon" id="user"></div>
             </div>
           </div>
+
           <div class="subNav">
             <span class="navBullet navBulletFirst" id="bestsellerButton">
               <a href="#bestsellerSection">
@@ -52,8 +60,10 @@
       <div class="section" id="bestsellerSection">
         <div class="sectionTitle" id="bestsellerSectionTitle">
           Bestsellers
+          <div class="bestsellerPreviousButton"></div>
+          <div class="bestsellerNextButton"></div>
         </div>
-        <div class="grid" id="bestsellerGrid">
+        <div class="grid bestsellerGrid1">
           <div class="grid-item grid-item--book" id="book1">
             <div class="book" id="bookCover1"></div>
             <span id="bookTitle">Ando</span>
@@ -137,9 +147,7 @@
         <div class="grid" id="recommendGrid">
             <a href="recommendations/20mostPsyBooks.html">
               <div class="grid-item rec4Column" id="recTop20PsyBooks">
-                <h2 class="blogPostTitle">11 most influencial</br>psychedelic books</h2>
-                <div class="recUnderliner" id="upperUnderliner"></div>
-                <div class="recUnderliner" id="lowerUnderliner"></div>
+                <h2 class="blogPostTitle">11 most influencial</br>psychedelic books</h2> 
               </div>
             </a>
             <div class="grid-item rec1Column" id="recBeatGeneration">
@@ -334,12 +342,14 @@
             $('.topbar').removeClass('topbarScrolledDown');
             $('.topbarIconSpace').removeClass('topbarIconSpaceScrolledDown');
             $('.pageTitle').removeClass('pageTitleScrolledDown');
+            $('.searchBar').removeClass('searchBarScrolledDown');
         }
         else {
             $('.pageNav').addClass('pageNavScrolledDown');
             $('.topbar').addClass('topbarScrolledDown');
             $('.topbarIconSpace').addClass('topbarIconSpaceScrolledDown');
             $('.pageTitle').addClass('pageTitleScrolledDown');
+            $('.searchBar').addClass('searchBarScrolledDown');
         }
       });
     </script>
@@ -347,38 +357,29 @@
       $('a[href^=#]').on('click', function(e){
         var href = $(this).attr('href');
         $('html, body').animate({
-            scrollTop:($(href).offset().top-140)
+            scrollTop:($(href).offset().top-150)
         },'slow');
         e.preventDefault();
+      });
+    </script>
+
+    <script type="text/javascript">
+      $(".bestsellerNextButton").click(function(event) {
+        $(".bestsellerGrid1").toggleClass('bestsellerGrid1Pos1');
+        $(".bestsellerGrid2").toggleClass('bestsellerGrid2Pos1');
+      });
+      $(".bestsellerPreviousButton").click(function(event) {
+        $(".bestsellerGrid1").removeClass('bestsellerGrid1Pos1');
+        $(".bestsellerGrid2").removeClass('bestsellerGrid2Pos1');
+      });
+    </script>
+
+    <script type="text/javascript">
+      $("#search").click(function(event) {
+        $(".searchBar").toggleClass('searchBarActive');
       });
     </script>
 
     <script src="js/index.js"></script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

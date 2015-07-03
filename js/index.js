@@ -2,6 +2,9 @@
 
 var gutterSize = 20;
 var columnSize = 176;
+
+var columnSizeSub = 80;
+var gutterSizeSub = 10;
 $(document).ready( function() {
 
   $('.grid').masonry({
@@ -9,6 +12,5 @@ $(document).ready( function() {
     columnWidth: columnSize,
     gutter: gutterSize,
     isFitWidth: true
-  });
-  
+  });  
 });
