@@ -162,7 +162,7 @@ h2 {
   height: 1px;
   bottom: -4px;
   left: 0;
-  background-color: #c89969;
+  background-color: #f75f0b;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -webkit-transition: all 0.25s ease-in-out 0s;
@@ -746,4 +746,8 @@ p.bjqs-caption{
     margin: auto;
     float: none;
   }
+}
+
+.bottomSpace {
+  height: 100px;
 }

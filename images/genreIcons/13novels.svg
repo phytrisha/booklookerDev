@@ -2,26 +2,18 @@
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="78 -69 176 176" style="enable-background:new 78 -69 176 176;" xml:space="preserve">
+	 viewBox="-332 210.3 176 176" style="enable-background:new -332 210.3 176 176;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#FFFFFF;stroke-width:3.6661;stroke-miterlimit:10;}
 </style>
-<g id="Background">
+<g id="icon">
 	<g>
 		<g>
-			<path class="st0" d="M213.9-25.8l-7.9-7.9l-70.6,70.6c0,0,1.6,11.1-11.9,24.6"/>
-			<path class="st0" d="M210.8-29l7.9,7.9l-70.6,70.6c0,0-11.1-1.6-24.6,11.9"/>
-			<line class="st0" x1="129.8" y1="55.1" x2="147.3" y2="37.7"/>
+			<path class="st0" d="M-196.3,258.2l-7.1-7.1l-62.9,62.9c0,0,1.4,9.9-10.6,21.9"/>
+			<path class="st0" d="M-199.1,255.4l7.1,7.1l-63,62.9c0,0-9.9-1.4-21.9,10.6"/>
+			<line class="st0" x1="-271.2" y1="330.3" x2="-255.7" y2="314.8"/>
 		</g>
-		<polyline class="st0" points="187.4,11.1 187.4,71.7 113.3,71.7 113.3,-27 187.4,-27 187.4,-15.8 		"/>
-		<line class="st0" x1="122.3" y1="-6.8" x2="178.5" y2="-6.8"/>
-		<line class="st1" x1="122.3" y1="2.2" x2="169.5" y2="2.2"/>
-		<line class="st0" x1="122.3" y1="-15.8" x2="178.5" y2="-15.8"/>
+		<polyline class="st0" points="-219.9,291.1 -219.9,345.1 -285.9,345.1 -285.9,257.1 -219.9,257.1 -219.9,267.1 		"/>
 	</g>
-</g>
-<g id="Calque_3">
-</g>
-<g id="icon">
 </g>
 </svg>

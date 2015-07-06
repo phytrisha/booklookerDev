@@ -166,7 +166,7 @@ h2 {
   height: 1px;
   bottom: -4px;
   left: 0;
-  background-color: #c89969;
+  background-color: #f75f0b;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -webkit-transition: all 0.25s ease-in-out 0s;
@@ -239,7 +239,7 @@ h2 {
 }
 
 #bestsellerSection {
-
+  overflow: hidden;
 }
 
 #bestsellerSectionTitle {
@@ -473,6 +473,11 @@ h2 {
   background-repeat: no-repeat;
   background-position: center;
 }
+#genreIconHobby {
+  background-image: url(../images/genreIcons/07hobby.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
 #genreIconSports {
   background-image: url(../images/genreIcons/08sports.svg);
   background-repeat: no-repeat;
@@ -539,37 +544,37 @@ h2 {
   background-position: center;
 }
 
-#book1 {height: 222px;}
+#book1 {height: 266px;}
 #book1:hover > #bookCover1 {opacity: 0.2;}
 #book1:hover > #bookTitle {visibility: visible;}
 #book1:hover > #bookSubtitle {visibility: visible;}
 #book1:hover > .bookLookIcon {visibility: visible;}
 #book1:hover > .bookBuyIcon {visibility: visible;}
-#bookCover1 {background-image: url(../images/bookCovers/bookCover1.jpg);}
+#bookCover1 {background-image: url(../images/bookCovers/nytBestsellers/1ThegirlonthetrainPaulaHawkins.png);}
 
-#book2 {height: 247px;}
+#book2 {height: 263px;}
 #book2:hover > #bookCover2 {opacity: 0.2;}
 #book2:hover > #bookTitle {visibility: visible;}
 #book2:hover > #bookSubtitle {visibility: visible;}
 #book2:hover > .bookLookIcon {visibility: visible;}
 #book2:hover > .bookBuyIcon {visibility: visible;}
-#bookCover2 {background-image: url(../images/bookCovers/bookCover2.jpg);}
+#bookCover2 {background-image: url(../images/bookCovers/nytBestsellers/2AspoolofbluethreadAnneTyler.png);}
 
-#book3 {height: 297px;}
+#book3 {height: 274px;}
 #book3:hover > #bookCover3 {opacity: 0.2;}
 #book3:hover > #bookTitle {visibility: visible;}
 #book3:hover > #bookSubtitle {visibility: visible;}
 #book3:hover > .bookLookIcon {visibility: visible;}
 #book3:hover > .bookBuyIcon {visibility: visible;}
-#bookCover3 {background-image: url(../images/bookCovers/bookCover3.jpg);}
+#bookCover3 {background-image: url(../images/bookCovers/nytBestsellers/3Nypdred3JamesPatterson.png);}
 
-#book4 {height: 265px;}
+#book4 {height: 258px;}
 #book4:hover > #bookCover4 {opacity: 0.2;}
 #book4:hover > #bookTitle {visibility: visible;}
 #book4:hover > #bookSubtitle {visibility: visible;}
 #book4:hover > .bookLookIcon {visibility: visible;}
 #book4:hover > .bookBuyIcon {visibility: visible;}
-#bookCover4 {background-image: url(../images/bookCovers/bookCover4.jpg);}
+#bookCover4 {background-image: url(../images/bookCovers/nytBestsellers/4AdangerousplaceMaisieDobbs.png);}
 
 #book5 {height: 270px;}
 #book5:hover > #bookCover5 {opacity: 0.2;}
@@ -577,47 +582,343 @@ h2 {
 #book5:hover > #bookSubtitle {visibility: visible;}
 #book5:hover > .bookLookIcon {visibility: visible;}
 #book5:hover > .bookBuyIcon {visibility: visible;}
-#bookCover5 {background-image: url(../images/bookCovers/bookCover5.jpg);}
+#bookCover5 {background-image: url(../images/bookCovers/nytBestsellers/5AWayOfBeingFreeBenOkri.jpg);}
 
-#book6 {height: 270px;}
+#book6 {height: 266px;}
 #book6:hover > #bookCover6 {opacity: 0.2;}
 #book6:hover > #bookTitle {visibility: visible;}
 #book6:hover > #bookSubtitle {visibility: visible;}
 #book6:hover > .bookLookIcon {visibility: visible;}
 #book6:hover > .bookBuyIcon {visibility: visible;}
-#bookCover6 {background-image: url(../images/bookCovers/bookCover6.jpg);}
+#bookCover6 {background-image: url(../images/bookCovers/nytBestsellers/06TheBuriedGiantKazuoIshiguro.png);}
 
-#book7 {height: 293px;}
+#book7 {height: 267px;}
 #book7:hover > #bookCover7 {opacity: 0.2;}
 #book7:hover > #bookTitle {visibility: visible;}
 #book7:hover > #bookSubtitle {visibility: visible;}
 #book7:hover > .bookLookIcon {visibility: visible;}
 #book7:hover > .bookBuyIcon {visibility: visible;}
-#bookCover7 {background-image: url(../images/bookCovers/bookCover7.jpg);}
+#bookCover7 {background-image: url(../images/bookCovers/nytBestsellers/7EndangeredCJBox.png);}
 
-#book8 {height: 250px;}
+#book8 {height: 269px;}
 #book8:hover > #bookCover8 {opacity: 0.2;}
 #book8:hover > #bookTitle {visibility: visible;}
 #book8:hover > #bookSubtitle {visibility: visible;}
 #book8:hover > .bookLookIcon {visibility: visible;}
 #book8:hover > .bookBuyIcon {visibility: visible;}
-#bookCover8 {background-image: url(../images/bookCovers/bookCover8.jpg);}
+#bookCover8 {background-image: url(../images/bookCovers/nytBestsellers/8TheNightingaleKristinHannah.png);}
 
-#book9 {height: 263px;}
+#book9 {height: 273px;}
 #book9:hover > #bookCover9 {opacity: 0.2;}
 #book9:hover > #bookTitle {visibility: visible;}
 #book9:hover > #bookSubtitle {visibility: visible;}
 #book9:hover > .bookLookIcon {visibility: visible;}
 #book9:hover > .bookBuyIcon {visibility: visible;}
-#bookCover9 {background-image: url(../images/bookCovers/bookCover9.jpg);}
+#bookCover9 {background-image: url(../images/bookCovers/nytBestsellers/9LastonehomeDebbieMacomber.png);}
 
-#book10 {height: 272px;}
+#book10 {height: 273px;}
 #book10:hover > #bookCover10 {opacity: 0.2;}
 #book10:hover > #bookTitle {visibility: visible;}
 #book10:hover > #bookSubtitle {visibility: visible;}
 #book10:hover > .bookLookIcon {visibility: visible;}
 #book10:hover > .bookBuyIcon {visibility: visible;}
-#bookCover10 {background-image: url(../images/bookCovers/bookCover10.jpg);}
+#bookCover10 {background-image: url(../images/bookCovers/nytBestsellers/10TheAssassinCliveCussler.png);}
+
+#book11 {height: 282px;}
+#book11:hover > #bookCover11 {opacity: 0.2;}
+#book11:hover > #bookTitle {visibility: visible;}
+#book11:hover > #bookSubtitle {visibility: visible;}
+#book11:hover > .bookLookIcon {visibility: visible;}
+#book11:hover > .bookBuyIcon {visibility: visible;}
+#bookCover11 {background-image: url(../images/bookCovers/spiegelBestsellers/1AltesLandDorteHansen.jpg);}
+
+#book12 {height: 279px;}
+#book12:hover > #bookCover12 {opacity: 0.2;}
+#book12:hover > #bookTitle {visibility: visible;}
+#book12:hover > #bookSubtitle {visibility: visible;}
+#book12:hover > .bookLookIcon {visibility: visible;}
+#book12:hover > .bookBuyIcon {visibility: visible;}
+#bookCover12 {background-image: url(../images/bookCovers/spiegelBestsellers/2TodZwischenDenZeilenDonnaLeon.jpg);}
+
+#book13 {height: 278px;}
+#book13:hover > #bookCover13 {opacity: 0.2;}
+#book13:hover > #bookTitle {visibility: visible;}
+#book13:hover > #bookSubtitle {visibility: visible;}
+#book13:hover > .bookLookIcon {visibility: visible;}
+#book13:hover > .bookBuyIcon {visibility: visible;}
+#bookCover13 {background-image: url(../images/bookCovers/spiegelBestsellers/3VerheissungAdlerOlsen.jpg);}
+
+#book14 {height: 297px;}
+#book14:hover > #bookCover14 {opacity: 0.2;}
+#book14:hover > #bookTitle {visibility: visible;}
+#book14:hover > #bookSubtitle {visibility: visible;}
+#book14:hover > .bookLookIcon {visibility: visible;}
+#book14:hover > .bookBuyIcon {visibility: visible;}
+#bookCover14 {background-image: url(../images/bookCovers/spiegelBestsellers/4KonzertOhneDichterKlausModicl.jpg);}
+
+#book15 {height: 284px;}
+#book15:hover > #bookCover15 {opacity: 0.2;}
+#book15:hover > #bookTitle {visibility: visible;}
+#book15:hover > #bookSubtitle {visibility: visible;}
+#book15:hover > .bookLookIcon {visibility: visible;}
+#book15:hover > .bookBuyIcon {visibility: visible;}
+#bookCover15 {background-image: url(../images/bookCovers/spiegelBestsellers/5MontecristoMartinSuter.jpg);}
+
+#book16 {height: 291px;}
+#book16:hover > #bookCover16 {opacity: 0.2;}
+#book16:hover > #bookTitle {visibility: visible;}
+#book16:hover > #bookSubtitle {visibility: visible;}
+#book16:hover > .bookLookIcon {visibility: visible;}
+#book16:hover > .bookBuyIcon {visibility: visible;}
+#bookCover16 {background-image: url(../images/bookCovers/spiegelBestsellers/6ImFruehlingRalfRothman.jpg);}
+
+#book17 {height: 281px;}
+#book17:hover > #bookCover17 {opacity: 0.2;}
+#book17:hover > #bookTitle {visibility: visible;}
+#book17:hover > #bookSubtitle2Row {visibility: visible;}
+#book17:hover > .bookLookIcon {visibility: visible;}
+#book17:hover > .bookBuyIcon {visibility: visible;}
+#bookCover17 {background-image: url(../images/bookCovers/spiegelBestsellers/730tageUndEinGanzesLebenAshleyReam.jpg);}
+
+#book18 {height: 269px;}
+#book18:hover > #bookCover18 {opacity: 0.2;}
+#book18:hover > #bookTitle {visibility: visible;}
+#book18:hover > #bookSubtitle {visibility: visible;}
+#book18:hover > .bookLookIcon {visibility: visible;}
+#book18:hover > .bookBuyIcon {visibility: visible;}
+#bookCover18 {background-image: url(../images/bookCovers/spiegelBestsellers/8Omalasstgruessenfredrikbackman.jpg);}
+
+#book19 {height: 270px;}
+#book19:hover > #bookCover19 {opacity: 0.2;}
+#book19:hover > #bookTitle {visibility: visible;}
+#book19:hover > #bookSubtitle {visibility: visible;}
+#book19:hover > .bookLookIcon {visibility: visible;}
+#book19:hover > .bookBuyIcon {visibility: visible;}
+#bookCover19 {background-image: url(../images/bookCovers/spiegelBestsellers/9ProvokateureMartinWalker.jpg);}
+
+#book20 {height: 273px;}
+#book20:hover > #bookCover20 {opacity: 0.2;}
+#book20:hover > #bookTitle {visibility: visible;}
+#book20:hover > #bookSubtitle {visibility: visible;}
+#book20:hover > .bookLookIcon {visibility: visible;}
+#book20:hover > .bookBuyIcon {visibility: visible;}
+#bookCover20 {background-image: url(../images/bookCovers/spiegelBestsellers/10WennderWindSingtHarukiMurakami.jpg);}
+
+#crimeBook1 {height: 278px;}
+#crimeBook1:hover > #crimeBookCover1 {opacity: 0.2;}
+#crimeBook1:hover > #bookTitle {visibility: visible;}
+#crimeBook1:hover > #bookSubtitle {visibility: visible;}
+#crimeBook1:hover > .bookLookIcon {visibility: visible;}
+#crimeBook1:hover > .bookBuyIcon {visibility: visible;}
+#crimeBookCover1 {background-image: url(../images/bookCovers/crime/AngelBabyRichardLange.jpg);}
+
+#crimeBook2 {height: 291px;}
+#crimeBook2:hover > #crimeBookCover2 {opacity: 0.2;}
+#crimeBook2:hover > #bookTitle {visibility: visible;}
+#crimeBook2:hover > #bookSubtitle {visibility: visible;}
+#crimeBook2:hover > .bookLookIcon {visibility: visible;}
+#crimeBook2:hover > .bookBuyIcon {visibility: visible;}
+#crimeBookCover2 {background-image: url(../images/bookCovers/crime/AuferstehungDerTotenWolfHaas.jpg);}
+
+#crimeBook3 {height: 285px;}
+#crimeBook3:hover > #crimeBookCover3 {opacity: 0.2;}
+#crimeBook3:hover > #bookTitle {visibility: visible;}
+#crimeBook3:hover > #bookSubtitle {visibility: visible;}
+#crimeBook3:hover > .bookLookIcon {visibility: visible;}
+#crimeBook3:hover > .bookBuyIcon {visibility: visible;}
+#crimeBookCover3 {background-image: url(../images/bookCovers/crime/BewusstlosSabineThiesler.jpg);}
+
+#crimeBook4 {height: 293px;}
+#crimeBook4:hover > #crimeBookCover4 {opacity: 0.2;}
+#crimeBook4:hover > #bookTitle {visibility: visible;}
+#crimeBook4:hover > #bookSubtitle {visibility: visible;}
+#crimeBook4:hover > .bookLookIcon {visibility: visible;}
+#crimeBook4:hover > .bookBuyIcon {visibility: visible;}
+#crimeBookCover4 {background-image: url(../images/bookCovers/crime/DerHofSimonBecket.jpg);}
+
+#crimeBook5 {height: 272px;}
+#crimeBook5:hover > #crimeBookCover5 {opacity: 0.2;}
+#crimeBook5:hover > #bookTitle {visibility: visible;}
+#crimeBook5:hover > #bookSubtitle {visibility: visible;}
+#crimeBook5:hover > .bookLookIcon {visibility: visible;}
+#crimeBook5:hover > .bookBuyIcon {visibility: visible;}
+#crimeBookCover5 {background-image: url(../images/bookCovers/crime/DieWutGeneKerrigan.jpg);}
+
+#crimeBook6 {height: 283px;}
+#crimeBook6:hover > #crimeBookCover6 {opacity: 0.2;}
+#crimeBook6:hover > #bookTitle {visibility: visible;}
+#crimeBook6:hover > #bookSubtitle2Row {visibility: visible;}
+#crimeBook6:hover > .bookLookIcon {visibility: visible;}
+#crimeBook6:hover > .bookBuyIcon {visibility: visible;}
+#crimeBookCover6 {background-image: url(../images/bookCovers/crime/DRSiriUndDerExplodierendeDracheColinCotterill.jpg);}
+
+#crimeBook7 {height: 280px;}
+#crimeBook7:hover > #crimeBookCover7 {opacity: 0.2;}
+#crimeBook7:hover > #bookTitle {visibility: visible;}
+#crimeBook7:hover > #bookSubtitle {visibility: visible;}
+#crimeBook7:hover > .bookLookIcon {visibility: visible;}
+#crimeBook7:hover > .bookBuyIcon {visibility: visible;}
+#crimeBookCover7 {background-image: url(../images/bookCovers/crime/EmpfindlicheWahrheitJohnLeCarre.jpg);}
+
+#crimeBook8 {height: 276px;}
+#crimeBook8:hover > #crimeBookCover8 {opacity: 0.2;}
+#crimeBook8:hover > #bookTitle {visibility: visible;}
+#crimeBook8:hover > #bookSubtitle {visibility: visible;}
+#crimeBook8:hover > .bookLookIcon {visibility: visible;}
+#crimeBook8:hover > .bookBuyIcon {visibility: visible;}
+#crimeBookCover8 {background-image: url(../images/bookCovers/crime/ErbarmenAdlerOlsen.jpg);}
+
+#crimeBook9 {height: 276px;}
+#crimeBook9:hover > #crimeBookCover9 {opacity: 0.2;}
+#crimeBook9:hover > #bookTitle {visibility: visible;}
+#crimeBook9:hover > #bookSubtitle {visibility: visible;}
+#crimeBook9:hover > .bookLookIcon {visibility: visible;}
+#crimeBook9:hover > .bookBuyIcon {visibility: visible;}
+#crimeBookCover9 {background-image: url(../images/bookCovers/crime/FalscheOpferArneDahl.jpg);}
+
+#crimeBook10 {height: 280px;}
+#crimeBook10:hover > #crimeBookCover10 {opacity: 0.2;}
+#crimeBook10:hover > #bookTitle {visibility: visible;}
+#crimeBook10:hover > #bookSubtitle {visibility: visible;}
+#crimeBook10:hover > .bookLookIcon {visibility: visible;}
+#crimeBook10:hover > .bookBuyIcon {visibility: visible;}
+#crimeBookCover10 {background-image: url(../images/bookCovers/crime/HarterSchnittKarinSlaughter.jpg);}
+
+#crimeBook11 {height: 285px;}
+#crimeBook11:hover > #crimeBookCover11 {opacity: 0.2;}
+#crimeBook11:hover > #bookTitle {visibility: visible;}
+#crimeBook11:hover > #bookSubtitle {visibility: visible;}
+#crimeBook11:hover > .bookLookIcon {visibility: visible;}
+#crimeBook11:hover > .bookBuyIcon {visibility: visible;}
+#crimeBookCover11 {background-image: url(../images/bookCovers/crime/KainsOpferAlfredBodenheimer.jpg);}
+
+#crimeBook12 {height: 266px;}
+#crimeBook12:hover > #crimeBookCover12 {opacity: 0.2;}
+#crimeBook12:hover > #bookTitle {visibility: visible;}
+#crimeBook12:hover > #bookSubtitle {visibility: visible;}
+#crimeBook12:hover > .bookLookIcon {visibility: visible;}
+#crimeBook12:hover > .bookBuyIcon {visibility: visible;}
+#crimeBookCover12 {background-image: url(../images/bookCovers/crime/KomaJoNesbo.jpg);}
+
+#crimeBook13 {height: 277px;}
+#crimeBook13:hover > #crimeBookCover13 {opacity: 0.2;}
+#crimeBook13:hover > #bookTitle {visibility: visible;}
+#crimeBook13:hover > #bookSubtitle {visibility: visible;}
+#crimeBook13:hover > .bookLookIcon {visibility: visible;}
+#crimeBook13:hover > .bookBuyIcon {visibility: visible;}
+#crimeBookCover13 {background-image: url(../images/bookCovers/crime/LeopardJoNesbo.jpg);}
+
+#crimeBook14 {height: 284px;}
+#crimeBook14:hover > #crimeBookCover14 {opacity: 0.2;}
+#crimeBook14:hover > #bookTitle {visibility: visible;}
+#crimeBook14:hover > #bookSubtitle {visibility: visible;}
+#crimeBook14:hover > .bookLookIcon {visibility: visible;}
+#crimeBook14:hover > .bookBuyIcon {visibility: visible;}
+#crimeBookCover14 {background-image: url(../images/bookCovers/crime/LetzteWorteKarinSlaughter.jpg);}
+
+#crimeBook15 {height: 293px;}
+#crimeBook15:hover > #crimeBookCover15 {opacity: 0.2;}
+#crimeBook15:hover > #bookTitle {visibility: visible;}
+#crimeBook15:hover > #bookSubtitle {visibility: visible;}
+#crimeBook15:hover > .bookLookIcon {visibility: visible;}
+#crimeBook15:hover > .bookBuyIcon {visibility: visible;}
+#crimeBookCover15 {background-image: url(../images/bookCovers/crime/MaigretzoegertSimenon.jpg);}
+
+#crimeBook16 {height: 296px;}
+#crimeBook16:hover > #crimeBookCover16 {opacity: 0.2;}
+#crimeBook16:hover > #bookTitle {visibility: visible;}
+#crimeBook16:hover > #bookSubtitle {visibility: visible;}
+#crimeBook16:hover > .bookLookIcon {visibility: visible;}
+#crimeBook16:hover > .bookBuyIcon {visibility: visible;}
+#crimeBookCover16 {background-image: url(../images/bookCovers/crime/RattenSommerKarrWehner.jpg);}
+
+#crimeBook17 {height: 278px;}
+#crimeBook17:hover > #crimeBookCover17 {opacity: 0.2;}
+#crimeBook17:hover > #bookTitle {visibility: visible;}
+#crimeBook17:hover > #bookSubtitle {visibility: visible;}
+#crimeBook17:hover > .bookLookIcon {visibility: visible;}
+#crimeBook17:hover > .bookBuyIcon {visibility: visible;}
+#crimeBookCover17 {background-image: url(../images/bookCovers/crime/RotkehlchenJoNesbo.jpg);}
+
+#crimeBook18 {height: 283px;}
+#crimeBook18:hover > #crimeBookCover18 {opacity: 0.2;}
+#crimeBook18:hover > #bookTitle {visibility: visible;}
+#crimeBook18:hover > #bookSubtitle {visibility: visible;}
+#crimeBook18:hover > .bookLookIcon {visibility: visible;}
+#crimeBook18:hover > .bookBuyIcon {visibility: visible;}
+#crimeBookCover18 {background-image: url(../images/bookCovers/crime/TageDerToteDonWinslow.jpg);}
+
+#crimeBook20 {height: 277px;}
+#crimeBook20:hover > #crimeBookCover20 {opacity: 0.2;}
+#crimeBook20:hover > #bookTitle {visibility: visible;}
+#crimeBook20:hover > #bookSubtitle {visibility: visible;}
+#crimeBook20:hover > .bookLookIcon {visibility: visible;}
+#crimeBook20:hover > .bookBuyIcon {visibility: visible;}
+#crimeBookCover20 {background-image: url(../images/bookCovers/crime/TakeroverAdlerOlsen.jpg);}
+
+#crimeBook21 {height: 252px;}
+#crimeBook21:hover > #crimeBookCover21 {opacity: 0.2;}
+#crimeBook21:hover > #bookTitle {visibility: visible;}
+#crimeBook21:hover > #bookSubtitle {visibility: visible;}
+#crimeBook21:hover > .bookLookIcon {visibility: visible;}
+#crimeBook21:hover > .bookBuyIcon {visibility: visible;}
+#crimeBookCover21 {background-image: url(../images/bookCovers/crime/TheSlaughterEthanGutman.jpg);}
+
+#crimeBook22 {height: 283px;}
+#crimeBook22:hover > #crimeBookCover22 {opacity: 0.2;}
+#crimeBook22:hover > #bookTitle {visibility: visible;}
+#crimeBook22:hover > #bookSubtitle {visibility: visible;}
+#crimeBook22:hover > .bookLookIcon {visibility: visible;}
+#crimeBook22:hover > .bookBuyIcon {visibility: visible;}
+#crimeBookCover22 {background-image: url(../images/bookCovers/crime/TierischeProfiteDonnaLeon.jpg);}
+
+#crimeBook23 {height: 268px;}
+#crimeBook23:hover > #crimeBookCover23 {opacity: 0.2;}
+#crimeBook23:hover > #bookTitle {visibility: visible;}
+#crimeBook23:hover > #bookSubtitle {visibility: visible;}
+#crimeBook23:hover > .bookLookIcon {visibility: visible;}
+#crimeBook23:hover > .bookBuyIcon {visibility: visible;}
+#crimeBookCover23 {background-image: url(../images/bookCovers/crime/TodesschussKarenRose.jpg);}
+
+#crimeBook25 {height: 283px;}
+#crimeBook25:hover > #crimeBookCover25 {opacity: 0.2;}
+#crimeBook25:hover > #bookTitle {visibility: visible;}
+#crimeBook25:hover > #bookSubtitle {visibility: visible;}
+#crimeBook25:hover > .bookLookIcon {visibility: visible;}
+#crimeBook25:hover > .bookBuyIcon {visibility: visible;}
+#crimeBookCover25 {background-image: url(../images/bookCovers/crime/TodzwischendenZeilenDonnaLeon.jpg);}
+
+#crimeBook26 {height: 278px;}
+#crimeBook26:hover > #crimeBookCover26 {opacity: 0.2;}
+#crimeBook26:hover > #bookTitle {visibility: visible;}
+#crimeBook26:hover > #bookSubtitle {visibility: visible;}
+#crimeBook26:hover > .bookLookIcon {visibility: visible;}
+#crimeBook26:hover > .bookBuyIcon {visibility: visible;}
+#crimeBookCover26 {background-image: url(../images/bookCovers/crime/VerblendungStiegLarsson.jpg);}
+
+#crimeBook27 {height: 279px;}
+#crimeBook27:hover > #crimeBookCover27 {opacity: 0.2;}
+#crimeBook27:hover > #bookTitle {visibility: visible;}
+#crimeBook27:hover > #bookSubtitle {visibility: visible;}
+#crimeBook27:hover > .bookLookIcon {visibility: visible;}
+#crimeBook27:hover > .bookBuyIcon {visibility: visible;}
+#crimeBookCover27 {background-image: url(../images/bookCovers/crime/VergebungStiegLarsson.jpg);}
+
+#crimeBook28 {height: 280px;}
+#crimeBook28:hover > #crimeBookCover28 {opacity: 0.2;}
+#crimeBook28:hover > #bookTitle {visibility: visible;}
+#crimeBook28:hover > #bookSubtitle {visibility: visible;}
+#crimeBook28:hover > .bookLookIcon {visibility: visible;}
+#crimeBook28:hover > .bookBuyIcon {visibility: visible;}
+#crimeBookCover28 {background-image: url(../images/bookCovers/crime/WasTotIstBelinaBauer.jpg);}
+
+#crimeBook29 {height: 279px;}
+#crimeBook29:hover > #crimeBookCover29 {opacity: 0.2;}
+#crimeBook29:hover > #bookTitle {visibility: visible;}
+#crimeBook29:hover > #bookSubtitle {visibility: visible;}
+#crimeBook29:hover > .bookLookIcon {visibility: visible;}
+#crimeBook29:hover > .bookBuyIcon {visibility: visible;}
+#crimeBookCover29 {background-image: url(../images/bookCovers/crime/ZeuginderTotenElisabethHerrmann.jpg);}
 
 
 #bookTitle {
@@ -641,6 +942,18 @@ h2 {
   font-weight: 200;
   color: #fff;
   visibility: hidden;
+}
+
+#bookSubtitle2Row {
+  position: absolute;
+  top: 30%;
+  width: 176px;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 9pt;
+  font-weight: 200;
+  color: #fff;
+  visibility: hidden; 
 }
 
 .bookLookIcon {
@@ -1058,18 +1371,20 @@ h2 {
 }
 
 .bestsellerPreviousButton {
-  background-color: red;
-  width: 25px;
-  height: 25px;
+  background-image: url(../images/icons/sliderButtonLeft.svg);
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 22px;
   float: left;
   margin-left: 250px;
   position: relative;
 }
 
 .bestsellerNextButton {
-  background-color: red;
-  width: 25px;
-  height: 25px;
+  background-image: url(../images/icons/sliderButtonRight.svg);
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 22px;
   float: right;
   margin-right: 250px;
   position: relative;
@@ -1077,10 +1392,19 @@ h2 {
 
 .bestsellerGrid1 {
   left: 0px;
+  float: left;
 }
 
 .bestsellerGrid1Pos1 {
-  left: -1156px;
+  left: -1176px;
+}
+
+.bestsellerGrid2 {
+  left: 1176px;
+}
+
+.bestsellerGrid2Pos1 {
+  left: 0px;
 }
 
 input[type="text"]:focus {
@@ -1103,7 +1427,7 @@ ul.input-list li {
 .style-4 input[type="text"] {
   padding: 10px;
   border: none;
-  border-bottom: solid 2px #c9c9c9;
+  border-bottom: solid 1px #c9c9c9;
   -webkit-transition: border 0.3s;
   -moz-transition: border 0.3s;
   -o-transition: border 0.3s;
@@ -1220,3 +1544,233 @@ ul.input-list li {
 .subcategoryFirstChild {
   margin-left: 94px;
 }
+
+#inputFieldSearchbar {
+
+}
+
+.searchResultContainer {
+  width: 100%;
+
+}
+
+.searchResultCollapsed {
+  width: 660px;
+  height: 0px;
+  background-color: #fff;
+  position: relative;
+  z-index: 999;
+  margin: 0 auto;
+  top: 100px;
+  -webkit-transition: 0.1s;
+}
+
+.searchResultExpanded {
+  height: 480px;
+}
+
+.searchResult {
+  width: 100%;
+  height: 160px;
+  background-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #bcc0cc;
+  padding: 17px;
+}
+
+.searchResultLarge {
+  width: 100%;
+  height: 160px;
+  background-color: #fff;
+  border-top-style: solid;
+  border-width: 1px;
+  border-color: #bcc0cc;
+  padding: 17px;
+}
+
+.searchResultBookCover {
+  width: 126px;
+  height: 126px;
+  float: left;
+  /*background-color: red;*/
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  position: absolute;
+}
+
+#searchResultBookCover1 {
+  background-image: url(../images/bookCovers/searchResultsBenOkri/A_Way_Of_Being_Free.jpg);
+}
+
+#searchResultBookCover2 {
+  background-image: url(../images/bookCovers/searchResultsBenOkri/Dangerous_Love.jpg);
+}
+
+#searchResultBookCover3 {
+  background-image: url(../images/bookCovers/searchResultsBenOkri/In_Arcadis.jpg);
+}
+
+#searchResultBookCover4 {
+  background-image: url(../images/bookCovers/searchResultsBenOkri/Tales_Of_Freedom.jpg);
+}
+
+#searchResultBookCover5 {
+  background-image: url(../images/bookCovers/searchResultsBenOkri/Wild.jpg);
+}
+
+.searchResultBookTitle {
+  float: left;
+  position: absolute;
+  margin-left: 132px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #232a41;
+}
+
+.searchResultAuthor {
+  float: left;
+  position: absolute;
+  margin-left: 132px;
+  margin-top: 22px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #a3a3a3;
+}
+
+.searchResultBookTitleLarge {
+  float: left;
+  position: absolute;
+  margin-left: 140px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #232a41;
+}
+
+.searchResultAuthorLarge {
+  float: left;
+  position: absolute;
+  margin-left: 140px;
+  margin-top: 22px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #a3a3a3;
+}
+
+
+.factsColumn {
+  height: 100%;
+  position: relative;
+  display: inline;
+}
+
+.factsColumn:after {
+  content:””;
+  display:table;
+  clear:both;
+}
+
+#factsColumn1 {
+  width: 45%;
+  float: left;
+}
+
+#factsColumn2 {
+  width: 45%;
+  float: left;
+  margin-left: 2%;
+}
+
+#factsColumn1Large {
+  width: 32%;
+  float: left;
+}
+
+#factsColumn2Large {
+  width: 32%;
+  float: left;
+  margin-left: 2%;
+}
+
+#factsColumn3Large {
+  width: 32%;
+  float: left;
+  margin-left: 2%;
+}
+
+.factLabel {
+  height: 100%;
+  width: 80px;
+  position: relative;
+  float: left;  
+}
+
+.factLabelText {
+  line-height: 20px;
+  font-weight: 200;
+  color: #232a41;
+  opacity: 0.8;
+}
+
+.factContentText {
+  line-height: 20px;
+  font-weight: 500;
+  color: #232a41;
+}
+
+.allFacts {
+  margin-left: 132px;
+  margin-top: 52px;
+}
+
+.allFactsLarge {
+  margin-left: 140px;
+  margin-top: 52px;
+}
+
+.buyButton {
+  width: 135px;
+  height: 36px;
+  position: relative;
+  border-radius: 4px;
+  border: 2px solid #f75f0b;
+  -webkit-transition: 0.1s;
+  text-align: center;
+  float: right;
+  margin-top: 38px;
+}
+
+.buyButton:hover {
+  background-color: #f75f0b;
+}
+
+.buyButton:hover > .priceTag {
+  color: #fff;
+}
+
+.buyButton:active {
+  border: 2px solid #de4f02;
+  background-color: #de4f02;
+}
+
+.priceTag {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-top: 6px;
+  -webkit-transition: 0.1s;
+}
+
+.bottomSpace {
+  height: 100px;
+}
+
+
+
+
+
+
+
+
+

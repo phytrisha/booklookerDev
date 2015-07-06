@@ -13,4 +13,12 @@ $(document).ready( function() {
     gutter: gutterSize,
     isFitWidth: true
   });  
+
+
+	$('.subcategoryItem').click(function(event) {
+	  $('.grid').masonry( 'remove', $('#crimeBook1') )
+	    // layout remaining item elements
+	    .masonry('layout');
+	});
+
 });

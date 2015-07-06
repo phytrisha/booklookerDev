@@ -2,16 +2,23 @@
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="78 -69 176 176" style="enable-background:new 78 -69 176 176;" xml:space="preserve">
+	 viewBox="-332 210.3 176 176" style="enable-background:new -332 210.3 176 176;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#FFFFFF;stroke-width:3.9059;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:4.0423;stroke-miterlimit:10;}
 </style>
 <g id="icon">
-	<g>
-		<rect x="125" y="-13" class="st0" width="82" height="64"/>
-		<path class="st1" d="M208-13c6.1,0,11,4.9,11,11s-4.9,11-11,11"/>
-		<path class="st1" d="M124,9c-6.1,0-11-4.9-11-11s4.9-11,11-11"/>
-	</g>
+	<circle class="st0" cx="-244" cy="299.3" r="33"/>
+	<polyline class="st0" points="-204,301.2 -204,294.3 -204,293.3 -204,279.3 -198,260.3 -192,260.3 -192,339.3 -198,339.3 
+		-198,299.2 -203,299.2 	"/>
+	<path class="st0" d="M-197,273.3"/>
+	<path class="st0" d="M-197,293.3"/>
+	<path class="st0" d="M-203,293.3"/>
+	<path class="st0" d="M-198,306.3"/>
+	<line class="st1" x1="-283" y1="258.2" x2="-283" y2="284.2"/>
+	<line class="st1" x1="-289" y1="258.2" x2="-289" y2="284.2"/>
+	<line class="st1" x1="-295" y1="258.2" x2="-295" y2="285.2"/>
+	<polyline class="st0" points="-297,286.2 -292,286.2 -292,339.2 -286,339.2 -286,286.2 -283,286.2 -281,286.2 	"/>
+	<line class="st0" x1="-287" y1="286.2" x2="-291" y2="286.2"/>
 </g>
 </svg>

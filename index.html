@@ -20,13 +20,13 @@
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
           <div class="pageNav">
-            <a href="index.html">
-              <div class="pageTitle">booklooker</div>
-            </a>
+          <a href="index.html">
+              <div class="pageTitle">booklooker</div>            
+          </a>
             <div class="searchBar">
               <ul class="input-list style-4 clearfix">
                 <li>
-                  <input type="text" placeholder="Search">
+                  <input type="text" placeholder="Search" id="inputFieldSearchbar">
                 </li>
               </ul>
             </div>
@@ -34,6 +34,13 @@
               <div class="topbarIcon" id="search"></div>
               <div class="topbarIcon" id="sell"></div>
               <div class="topbarIcon" id="user"></div>
+            </div>
+            <div class="searchResultContainer">
+              <div class="searchResultCollapsed">
+                <div class="searchResultList">
+                  
+                </div>
+              </div>
             </div>
           </div>
 
@@ -59,80 +66,152 @@
 
       <div class="section" id="bestsellerSection">
         <div class="sectionTitle" id="bestsellerSectionTitle">
-          Bestsellers
+          <span>Spiegel Bestsellers</span>
           <div class="bestsellerPreviousButton"></div>
           <div class="bestsellerNextButton"></div>
         </div>
         <div class="grid bestsellerGrid1">
           <div class="grid-item grid-item--book" id="book1">
             <div class="book" id="bookCover1"></div>
-            <span id="bookTitle">Ando</span>
-            <span id="bookSubtitle">Tadao Ando</span>
+            <span id="bookTitle">The Girl On The Train</span>
+            <span id="bookSubtitle">Paula Hawkins</span>
             <div class="bookLookIcon"></div>
             <div class="bookBuyIcon"></div>
           </div>
           <div class="grid-item grid-item--book" id="book2">
             <div class="book" id="bookCover2"></div>
-            <span id="bookTitle">Monet</span>
-            <span id="bookSubtitle">Claude Monet</span>
+            <span id="bookTitle">A Spool Of Blue Thread</span>
+            <span id="bookSubtitle">Anne Tyler</span>
             <div class="bookLookIcon"></div>
             <div class="bookBuyIcon"></div>
           </div>
           <div class="grid-item grid-item--book" id="book3">
             <div class="book" id="bookCover3"></div>
-            <span id="bookTitle">Un Amor Dangereux</span>
-            <span id="bookSubtitle">Ben Okri</span>
+            <span id="bookTitle">NYPD Red 3</span>
+            <span id="bookSubtitle">James Patterson</span>
             <div class="bookLookIcon"></div>
             <div class="bookBuyIcon"></div>
           </div>
           <div class="grid-item grid-item--book" id="book4">
             <div class="book" id="bookCover4"></div>
-            <span id="bookTitle">By Blood</span>
-            <span id="bookSubtitle">Ellen Ulman</span>
-            <div class="bookLookIcon"></div>
-            <div class="bookBuyIcon"></div>
-          </div>
-          <div class="grid-item grid-item--book" id="book5">
-            <div class="book" id="bookCover5"></div>
-            <span id="bookTitle">Greece On My Wheels</span>
-            <span id="bookSubtitle">Edward Enfield</span>
+            <span id="bookTitle">A Dangerous Place</span>
+            <span id="bookSubtitle">Maisie Dobbs</span>
             <div class="bookLookIcon"></div>
             <div class="bookBuyIcon"></div>
           </div>
           <a href="books/bookAWayOfBeingFree.html">
-            <div class="grid-item grid-item--book" id="book6">
-              <div class="book" id="bookCover6"></div>
-              <span id="bookTitle">A Way of Being Free</span>
+            <div class="grid-item grid-item--book" id="book5">
+              <div class="book" id="bookCover5"></div>
+              <span id="bookTitle">A Way Of Being Free</span>
               <span id="bookSubtitle">Ben Okri</span>
               <div class="bookLookIcon"></div>
               <div class="bookBuyIcon"></div>
-            </div>            
+            </div>
           </a>
+          <div class="grid-item grid-item--book" id="book6">
+            <div class="book" id="bookCover6"></div>
+            <span id="bookTitle">The Buried Giant</span>
+            <span id="bookSubtitle">Kazuo Ishiguro</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>            
           <div class="grid-item grid-item--book" id="book7">
             <div class="book" id="bookCover7"></div>
-            <span id="bookTitle">Junky</span>
-            <span id="bookSubtitle">William S. Burroughs</span>
+            <span id="bookTitle">Endangered</span>
+            <span id="bookSubtitle">CJ Boxs</span>
             <div class="bookLookIcon"></div>
             <div class="bookBuyIcon"></div>
           </div>
           <div class="grid-item grid-item--book" id="book8">
             <div class="book" id="bookCover8"></div>
-            <span id="bookTitle">The Road of Excess</span>
-            <span id="bookSubtitle">Marcus Boon</span>
+            <span id="bookTitle">The Nightingale</span>
+            <span id="bookSubtitle">Kristin Hannah</span>
             <div class="bookLookIcon"></div>
             <div class="bookBuyIcon"></div>
           </div>
           <div class="grid-item grid-item--book" id="book9">
             <div class="book" id="bookCover9"></div>
-            <span id="bookTitle">The Water Knife</span>
-            <span id="bookSubtitle">Paolo Bacigalupi</span>
+            <span id="bookTitle">Last One Home</span>
+            <span id="bookSubtitle">Debbie Macomber</span>
             <div class="bookLookIcon"></div>
             <div class="bookBuyIcon"></div>
           </div>
           <div class="grid-item grid-item--book" id="book10">
             <div class="book" id="bookCover10"></div>
-            <span id="bookTitle">The Name of The Rose</span>
-            <span id="bookSubtitle">Umberto Eco</span>
+            <span id="bookTitle">The Assassin</span>
+            <span id="bookSubtitle">Clive Cussler</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+        </div>
+        <div class="grid bestsellerGrid2">
+          <div class="grid-item grid-item--book" id="book11">
+            <div class="book" id="bookCover11"></div>
+            <span id="bookTitle">Altes Land</span>
+            <span id="bookSubtitle">Dorte Hansen</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="book12">
+            <div class="book" id="bookCover12"></div>
+            <span id="bookTitle">Tod Zwischen den Zeilen</span>
+            <span id="bookSubtitle">Donna Leon</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="book13">
+            <div class="book" id="bookCover13"></div>
+            <span id="bookTitle">Verheissung</span>
+            <span id="bookSubtitle">Adler Olsen</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="book14">
+            <div class="book" id="bookCover14"></div>
+            <span id="bookTitle">Konzert Ohne Dichter</span>
+            <span id="bookSubtitle">Klaus Modicl</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="book15">
+            <div class="book" id="bookCover15"></div>
+            <span id="bookTitle">Montecristo</span>
+            <span id="bookSubtitle">Martin Suter</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="book16">
+            <div class="book" id="bookCover16"></div>
+            <span id="bookTitle">Im Frühling</span>
+            <span id="bookSubtitle">Ralf Rothman</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>            
+          <div class="grid-item grid-item--book" id="book17">
+            <div class="book" id="bookCover17"></div>
+            <span id="bookTitle">30 Tage Und Ein</br>Ganzes Leben</span>
+            <span id="bookSubtitle2Row">Ashley Ream</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="book18">
+            <div class="book" id="bookCover18"></div>
+            <span id="bookTitle">Oma Lässt Grüßen</span>
+            <span id="bookSubtitle">Frederik Backman</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="book19">
+            <div class="book" id="bookCover19"></div>
+            <span id="bookTitle">Provokateure</span>
+            <span id="bookSubtitle">Martin Walker</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="book20">
+            <div class="book" id="bookCover20"></div>
+            <span id="bookTitle">Wenn der Wind Singt</span>
+            <span id="bookSubtitle">Haruki Murakami</span>
             <div class="bookLookIcon"></div>
             <div class="bookBuyIcon"></div>
           </div>
@@ -234,7 +313,7 @@
           <div class="grid-item grid-item--genre">
             <div class="genreBackgroundImage" id="genreBgHobby"></div>
             <div class="genre">
-              <div class="genreIcon"></div>
+              <div class="genreIcon" id="genreIconHobby"></div>
               <div class="genreText">Hobby</div>
             </div>
           </div>
@@ -336,6 +415,7 @@
     </div>
 
     <script type="text/javascript">
+      var topbarScrolledDownStatus = false;
       $(window).bind('mousewheel', function(event) {
         if (event.originalEvent.wheelDelta >= 0) {
             $('.pageNav').removeClass('pageNavScrolledDown');
@@ -343,6 +423,7 @@
             $('.topbarIconSpace').removeClass('topbarIconSpaceScrolledDown');
             $('.pageTitle').removeClass('pageTitleScrolledDown');
             $('.searchBar').removeClass('searchBarScrolledDown');
+            topbarScrolledDownStatus = false;
         }
         else {
             $('.pageNav').addClass('pageNavScrolledDown');
@@ -350,34 +431,107 @@
             $('.topbarIconSpace').addClass('topbarIconSpaceScrolledDown');
             $('.pageTitle').addClass('pageTitleScrolledDown');
             $('.searchBar').addClass('searchBarScrolledDown');
+            topbarScrolledDownStatus = true;
         }
       });
-    </script>
-    <script type="text/javascript">
+
       $('a[href^=#]').on('click', function(e){
         var href = $(this).attr('href');
-        $('html, body').animate({
-            scrollTop:($(href).offset().top-150)
-        },'slow');
-        e.preventDefault();
+        if (topbarScrolledDownStatus) {
+          $('html, body').animate({
+              scrollTop:($(href).offset().top-135)
+          },'slow');
+          e.preventDefault();          
+        } else {
+          $('html, body').animate({
+              scrollTop:($(href).offset().top-190)
+          },'slow');
+          e.preventDefault();      
+        }
+
       });
     </script>
 
     <script type="text/javascript">
       $(".bestsellerNextButton").click(function(event) {
-        $(".bestsellerGrid1").toggleClass('bestsellerGrid1Pos1');
-        $(".bestsellerGrid2").toggleClass('bestsellerGrid2Pos1');
+        $(".bestsellerGrid1").addClass('bestsellerGrid1Pos1');
+        $(".bestsellerGrid2").addClass('bestsellerGrid2Pos1');
+        $('#bestsellerSectionTitle span').each(function() {
+          var text = $(this).text();
+          $(this).text(text.replace('Spiegel Bestsellers', 'New York Times Bestsellers')); 
+        });
       });
       $(".bestsellerPreviousButton").click(function(event) {
         $(".bestsellerGrid1").removeClass('bestsellerGrid1Pos1');
         $(".bestsellerGrid2").removeClass('bestsellerGrid2Pos1');
+        $('#bestsellerSectionTitle span').each(function() {
+          var text = $(this).text();
+          $(this).text(text.replace('New York Times Bestsellers', 'Spiegel Bestsellers')); 
+        });
       });
     </script>
 
     <script type="text/javascript">
+      var searchActive = false;
+      var searchResultsShown = false;
+
+      // click button um suchleiste einzublenden
       $("#search").click(function(event) {
+        // suchleiste wird eingeblendet
         $(".searchBar").toggleClass('searchBarActive');
+
+        // wenn searchbar aktiv ist alles ausblenden, auch suchvorschläge
+        if (searchActive) {
+
+          searchActive = false;
+          searchResultsShown = false;
+          $('.searchResultCollapsed').removeClass('searchResultExpanded');
+          $('.searchResult').remove();
+
+        } else {
+          searchActive = true;
+        }
       });
+      // check suchleiste für keyboard input
+      $("#inputFieldSearchbar").keydown(function(event) {
+        // gedrückte taste wird in variable geschrieben
+        var x = event.keyCode;
+        if (x == 13) {  // 13 is the Enter key
+          //check den inhalt des inputs und gleiche ihn mit bestimmten fest-werten ab
+          if ($('#inputFieldSearchbar').val() == 'Ben Okri' || $('#inputFieldSearchbar').val() == 'Ben okri' || $('#inputFieldSearchbar').val() == 'ben Okri' || $('#inputFieldSearchbar').val() == 'ben okri'){
+            document.location.href = '../booklookerDev/searchResults/searchResultsBenOkri.html';
+
+          } else if ($('#inputFieldSearchbar').val() == '') {
+
+            console.log("You must enter a search term!");
+
+          } else {
+
+            console.log("Unrecognized Search Term");
+
+          }
+        }
+        else {
+          // wenn jede taste außer der enter taste gedrückt wird, zeige suchvorschläge
+          if (searchResultsShown == false) {
+            console.log("Show me search-suggestions");
+            $('.searchResultCollapsed').addClass('searchResultExpanded');
+            for (var i = 0; i <3; i++) {
+              if (i == 0) {
+                //ein suchervorschlag
+                $('.searchResultList').add('<a href="books/bookAWayOfBeingFree.html"><div class="searchResult"><div class="searchResultBookCover" id="searchResultBookCover1"></div><div class="searchResultBookTitle">A Way of Being Free</div><div class="searchResultAuthor">Ben Okri</div><div class="allFacts"><div class="factsColumn" id="factsColumn1"><div class="factLabel"><p class="factLabelText">Publisher</br>ISBN-10</br>ISBN-13</p></div><div class="factContent"><p class="factContentText">Aperture</br>1784081477</br>978-1784081478</p></div></div><div class="factsColumn" id="factsColumn2"><div class="factLabel"><p class="factLabelText">Paperback</br>Hardcover</p></div><div class="factContent"><p class="factContentText">26 books available</br>0 books available</p></div></div></div></div></a>').appendTo($('.searchResultList'));
+              } else if (i == 1) {
+                $('.searchResultList').add('<div class="searchResult"><div class="searchResultBookCover" id="searchResultBookCover2"></div><div class="searchResultBookTitle">Dangerous Love</div><div class="searchResultAuthor">Ben Okri</div><div class="allFacts"><div class="factsColumn" id="factsColumn1"><div class="factLabel"><p class="factLabelText">Publisher</br>ISBN-10</br>ISBN-13</p></div><div class="factContent"><p class="factContentText">Aperture</br>1784081477</br>978-1784081478</p></div></div><div class="factsColumn" id="factsColumn2"><div class="factLabel"><p class="factLabelText">Paperback</br>Hardcover</p></div><div class="factContent"><p class="factContentText">26 books available</br>0 books available</p></div></div></div></div>').appendTo($('.searchResultList'))
+              } else if (i == 2) {
+                $('.searchResultList').add('<div class="searchResult"><div class="searchResultBookCover" id="searchResultBookCover3"></div><div class="searchResultBookTitle">In Arcadis</div><div class="searchResultAuthor">Ben Okri</div><div class="allFacts"><div class="factsColumn" id="factsColumn1"><div class="factLabel"><p class="factLabelText">Publisher</br>ISBN-10</br>ISBN-13</p></div><div class="factContent"><p class="factContentText">Aperture</br>1784081477</br>978-1784081478</p></div></div><div class="factsColumn" id="factsColumn2"><div class="factLabel"><p class="factLabelText">Paperback</br>Hardcover</p></div><div class="factContent"><p class="factContentText">26 books available</br>0 books available</p></div></div></div></div>').appendTo($('.searchResultList'));
+              }
+
+            }
+            searchResultsShown=true;
+          }
+        }
+      });
+
     </script>
 
     <script src="js/index.js"></script>
