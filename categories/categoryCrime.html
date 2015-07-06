@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="user-scalable=0, initial-scale=1.0">
+    <title>Booklooker</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bjqs.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <!--<link rel="stylesheet" href="../css/demo.css">-->
+    <script src='../js/jquery.min.js'></script>
+    <script src='../js/masonry.pkgd.js'></script>
+    <script src="../js/bjqs-1.3.min.js"></script>
+  </head>
+
+  <body>
+    <div class="content">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="pageNav">
+            <a href="../index.html">
+              <div class="pageTitle">booklooker</div>
+            </a>
+            <div class="searchBar">
+              <ul class="input-list style-4 clearfix">
+                <li>
+                  <input type="text" placeholder="Search">
+                </li>
+              </ul>
+            </div>
+            <div class="topbarIconSpace">
+              <div class="topbarIcon" id="search"></div>
+              <div class="topbarIcon" id="sell"></div>
+              <div class="topbarIcon" id="user"></div>
+            </div>
+          </div>
+
+          <div class="subNav">
+            <span class="navBullet navBulletFirst" id="bestsellerButton">
+              <a href="../index.html#bestsellerSection">
+                Bestseller
+              </a>
+            </span>
+            <span class="navBullet" id="recommendButton">
+              <a href="../index.html#recommendSection">
+                Recommendations
+              </a>
+            </span>
+            <span class="navBullet" id="categoriesButton">
+              <a href="../index.html#categoriesSection">
+                Categories
+              </a>
+            </span>
+          </div>
+        </div>
+      </nav>
+
+      <div class="section" id="bestsellerSection">
+        <div class="sectionTitle" id="bestsellerSectionTitle">
+          Crime
+        </div>
+        <div class="crimeSubcategoryContainer">
+          <div class="subcategoriesContainer">
+            <div class="subcategoryItem subcategoryRow1 subcategoryItemInactive">
+              <p class="subcategoryLabel">History</p>
+            </div>
+            <div class="subcategoryItem subcategoryRow1 subcategoryItemInactive">
+              <p class="subcategoryLabel">Woman</p>
+            </div>
+            <div class="subcategoryItem subcategoryRow1 subcategoryItemInactive">
+              <p class="subcategoryLabel">Detective</p>
+            </div>
+            <div class="subcategoryItem subcategoryRow1 subcategoryItemInactive">
+              <p class="subcategoryLabel">Horror</p>
+            </div>
+            <div class="subcategoryItem subcategoryRow1 subcategoryItemInactive">
+              <p class="subcategoryLabel">Vampire</p>
+            </div>
+          </div>
+          <div class="subcategoriesContainer">
+            <div class="subcategoryItem subcategoryRow2 subcategoryItemInactive subcategoryFirstChild">
+              <p class="subcategoryLabel">Justice</p>
+            </div>
+            <div class="subcategoryItem subcategoryRow2 subcategoryItemInactive">
+              <p class="subcategoryLabel">Political</p>
+            </div>
+            <div class="subcategoryItem subcategoryRow2 subcategoryItemInactive">
+              <p class="subcategoryLabel">Romantic</p>
+            </div>
+            <div class="subcategoryItem subcategoryRow2 subcategoryItemInactive">
+              <p class="subcategoryLabel">Spy</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid bestsellerGrid1">
+          <div class="grid-item grid-item--book" id="crimeBook1">
+            <div class="book" id="crimeBookCover1"></div>
+            <span id="bookTitle">Angel Baby</span>
+            <span id="bookSubtitle">Richard Lange</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="crimeBook2">
+            <div class="book" id="crimeBookCover2"></div>
+            <span id="bookTitle">Auferstehung Der Toten</span>
+            <span id="bookSubtitle">Wolf Haas</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="crimeBook3">
+            <div class="book" id="crimeBookCover3"></div>
+            <span id="bookTitle">Bewusstlos</span>
+            <span id="bookSubtitle">Sabine Thiesler</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="crimeBook4">
+            <div class="book" id="crimeBookCover4"></div>
+            <span id="bookTitle">Der Hof</span>
+            <span id="bookSubtitle">Simon Becket</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="crimeBook5">
+            <div class="book" id="crimeBookCover5"></div>
+            <span id="bookTitle">Die Wut</span>
+            <span id="bookSubtitle">Gene Kerrigan</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="crimeBook6">
+            <div class="book" id="crimeBookCover6"></div>
+            <span id="bookTitle">DR. Siri Und Der Explodierende Drache</span>
+            <span id="bookSubtitle2Row">Colin Cotterill</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <a href="../books/bookAWayOfBeingFree.html">
+            <div class="grid-item grid-item--book" id="book5">
+              <div class="book" id="bookCover5"></div>
+              <span id="bookTitle">A Way Of Being Free</span>
+              <span id="bookSubtitle">Ben Okri</span>
+              <div class="bookLookIcon"></div>
+              <div class="bookBuyIcon"></div>
+            </div>
+          </a>
+          <div class="grid-item grid-item--book" id="crimeBook7">
+            <div class="book" id="crimeBookCover7"></div>
+            <span id="bookTitle">Empfindliche Wahrheit</span>
+            <span id="bookSubtitle">John le Carré</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="crimeBook8">
+            <div class="book" id="crimeBookCover8"></div>
+            <span id="bookTitle">Erbarmen</span>
+            <span id="bookSubtitle">Adler Olsen</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="crimeBook9">
+            <div class="book" id="crimeBookCover9"></div>
+            <span id="bookTitle">Falsche Opfer</span>
+            <span id="bookSubtitle">Arne Dahl</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="crimeBook10">
+            <div class="book" id="crimeBookCover10"></div>
+            <span id="bookTitle">Harter Schnitt</span>
+            <span id="bookSubtitle">Karin Slaughter</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="crimeBook11">
+            <div class="book" id="crimeBookCover11"></div>
+            <span id="bookTitle">Kains Opfer</span>
+            <span id="bookSubtitle">Alfred Bodenheimer</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="crimeBook12">
+            <div class="book" id="crimeBookCover12"></div>
+            <span id="bookTitle">Koma</span>
+            <span id="bookSubtitle">Jo Nesbo</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="crimeBook13">
+            <div class="book" id="crimeBookCover13"></div>
+            <span id="bookTitle">Leopard</span>
+            <span id="bookSubtitle">Jo Nesbo</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="crimeBook14">
+            <div class="book" id="crimeBookCover14"></div>
+            <span id="bookTitle">Letzte Worte</span>
+            <span id="bookSubtitle">Karin Slaughter</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="crimeBook15">
+            <div class="book" id="crimeBookCover15"></div>
+            <span id="bookTitle">Maigret Zögert</span>
+            <span id="bookSubtitle">Simenon</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="crimeBook16">
+            <div class="book" id="crimeBookCover16"></div>
+            <span id="bookTitle">Ratten Sommer</span>
+            <span id="bookSubtitle">Kar Wehner</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="crimeBook17">
+            <div class="book" id="crimeBookCover17"></div>
+            <span id="bookTitle">Rotkehlchen</span>
+            <span id="bookSubtitle">Jo Nesbo</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="crimeBook18">
+            <div class="book" id="crimeBookCover18"></div>
+            <span id="bookTitle">Tage Der Toten</span>
+            <span id="bookSubtitle">Don Winslow</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="crimeBook20">
+            <div class="book" id="crimeBookCover20"></div>
+            <span id="bookTitle">Takeover</span>
+            <span id="bookSubtitle">Adler Olsen</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="crimeBook21">
+            <div class="book" id="crimeBookCover21"></div>
+            <span id="bookTitle">The Slaughter</span>
+            <span id="bookSubtitle">Ethan Gutman</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="crimeBook22">
+            <div class="book" id="crimeBookCover22"></div>
+            <span id="bookTitle">Tierische Profite</span>
+            <span id="bookSubtitle">Donna Leon</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="crimeBook23">
+            <div class="book" id="crimeBookCover23"></div>
+            <span id="bookTitle">Todesschuss</span>
+            <span id="bookSubtitle">Karen Rose</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="crimeBook25">
+            <div class="book" id="crimeBookCover25"></div>
+            <span id="bookTitle">Tod Zwischen Den Zeilen</span>
+            <span id="bookSubtitle">Donna Leon</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="crimeBook26">
+            <div class="book" id="crimeBookCover26"></div>
+            <span id="bookTitle">Verblendung</span>
+            <span id="bookSubtitle">Stieg Larsson</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="crimeBook27">
+            <div class="book" id="crimeBookCover27"></div>
+            <span id="bookTitle">Vergebung</span>
+            <span id="bookSubtitle">Stieg Larsson</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="crimeBook28">
+            <div class="book" id="crimeBookCover28"></div>
+            <span id="bookTitle">Was Tot Ist</span>
+            <span id="bookSubtitle">Belina Bauer</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+          <div class="grid-item grid-item--book" id="crimeBook29">
+            <div class="book" id="crimeBookCover29"></div>
+            <span id="bookTitle">Zeugin der Toten</span>
+            <span id="bookSubtitle">Elisabeth Hermann</span>
+            <div class="bookLookIcon"></div>
+            <div class="bookBuyIcon"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      $(window).bind('mousewheel', function(event) {
+        if (event.originalEvent.wheelDelta >= 0) {
+            $('.pageNav').removeClass('pageNavScrolledDown');
+            $('.topbar').removeClass('topbarScrolledDown');
+            $('.topbarIconSpace').removeClass('topbarIconSpaceScrolledDown');
+            $('.pageTitle').removeClass('pageTitleScrolledDown');
+            $('.searchBar').removeClass('searchBarScrolledDown');
+        }
+        else {
+            $('.pageNav').addClass('pageNavScrolledDown');
+            $('.topbar').addClass('topbarScrolledDown');
+            $('.topbarIconSpace').addClass('topbarIconSpaceScrolledDown');
+            $('.pageTitle').addClass('pageTitleScrolledDown');
+            $('.searchBar').addClass('searchBarScrolledDown');
+        }
+      });
+    </script>
+
+    <script type="text/javascript">
+      $('.subcategoryItem').click(function(event) {
+        $(this).toggleClass('subcategoryItemActive');
+        $('#crimeBook1').remove();
+        $('#crimeBook3').remove();
+        $('#crimeBook4').remove();
+        $('#crimeBook7').remove();
+        $('#crimeBook12').remove();
+        $('#crimeBook13').remove();
+        $('#crimeBook14').remove();
+        $('#crimeBook15').remove();
+        $('#crimeBook16').remove();
+      });
+    </script>
+
+    <script type="text/javascript">
+      $("#search").click(function(event) {
+        $(".searchBar").toggleClass('searchBarActive');
+      });
+    </script>
+
+    <script src="../js/index.js"></script>
+  </body>
+</html>
